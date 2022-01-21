@@ -94,14 +94,14 @@
         <div class="listview-title mt-1">ตั้งค่าผู้ใช้</div>
         <ul class="listview image-listview text inset">
             <li>
-                <a href="#" class="item">
+                <a href="change-username" class="item">
                     <div class="in">
                         <div>เปลี่ยนชื่อผู้ใช้</div>
                     </div>
                 </a>
             </li>
             <li>
-                <a href="#" class="item">
+                <a href="change-email" class="item">
                     <div class="in">
                         <div>เปลี่ยน E-mail</div>
                     </div>
@@ -119,7 +119,7 @@
                 <div class="item">
                     <div class="in">
                         <div>
-                            ตั้งโปรไฟล์ส่วนตัว
+                            ตั้งเป็นโปรไฟล์ส่วนตัว
                         </div>
                         <div class="form-check form-switch ms-2">
                             <input class="form-check-input" type="checkbox" id="SwitchCheckDefault2">
@@ -133,7 +133,7 @@
         <div class="listview-title mt-1">ความปลอดภัย</div>
         <ul class="listview image-listview text mb-2 inset">
             <li>
-                <a href="#" class="item">
+                <a href="change-password" class="item">
                     <div class="in">
                         <div>เปลี่ยนรหัสผ่าน</div>
                     </div>

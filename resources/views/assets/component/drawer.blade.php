@@ -121,7 +121,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="component-messages.html" class="item">
+                        <a href="faq" class="item">
                             <div class="icon-box bg-primary">
                                 <ion-icon name="chatbubble-outline"></ion-icon>
                             </div>

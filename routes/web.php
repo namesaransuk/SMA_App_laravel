@@ -68,3 +68,15 @@ Route::get('/contact', function () {
 Route::get('/faq', function () {
     return view('app-faq');
 });
+
+Route::get('/change-username', function () {
+    return view('app-change-username');
+});
+
+Route::get('/change-email', function () {
+    return view('app-change-email');
+});
+
+Route::get('/change-password', function () {
+    return view('app-change-password');
+});
