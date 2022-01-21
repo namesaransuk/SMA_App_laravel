@@ -3,16 +3,14 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="theme-color" content="#000000">
     <title>Finapp</title>
     <meta name="description" content="Finapp HTML Mobile Template">
-    <meta name="keywords"
-        content="bootstrap, wallet, banking, fintech mobile template, cordova, phonegap, mobile, html, responsive" />
-        <link rel="icon" type="image/png" href="<?php echo asset('img/favicon.png'); ?>" sizes="32x32">
+    <meta name="keywords" content="bootstrap, wallet, banking, fintech mobile template, cordova, phonegap, mobile, html, responsive" />
+    <link rel="icon" type="image/png" href="<?php echo asset('img/favicon.png'); ?>" sizes="32x32">
     <link rel="apple-touch-icon" sizes="180x180" href="<?php echo asset('img/icon/192x192.png'); ?>">
     <link rel="stylesheet" type="text/css" href="<?php echo asset('css/style.css'); ?>">
     <link rel="manifest" href="__manifest.json">
@@ -27,11 +25,11 @@
     <!-- * loader -->
 
     <!-- App Header -->
-    <div class="appHeader">
+    <div class="appHeader bg-primary text-light">
         <div class="left">
-            <a href="#" class="headerButton goBack">
+            <!-- <a href="#" class="headerButton goBack">
                 <ion-icon name="chevron-back-outline"></ion-icon>
-            </a>
+            </a> -->
         </div>
         <div class="pageTitle">
             ฉัน
@@ -48,7 +46,7 @@
     <!-- App Capsule -->
     <div id="appCapsule">
 
-        <div class="section mt-3 text-center">
+        <div class="section pt-3 pb-3 full gradientSection text-center">
             <div class="avatar-section">
                 <a href="#">
                     <img src="<?php echo asset('img/sample/avatar/avatar1.jpg'); ?>" alt="avatar" class="imaged w100 rounded">
@@ -57,9 +55,23 @@
                     </span>
                 </a>
             </div>
+            <div class="button-section px-3 pt-3">
+                <div class="row">
+                    <div class="col">
+                        <a href="login" class="btn btn-block btn-success">
+                            เข้าสู่ระบบ
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="register" class="btn btn-block btn-secondary">
+                            สมัครสมาชิก
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="container mt-3">
+        <!-- <div class="container mt-3">
             <div class="row">
                 <div class="col">
                     <a href="login" class="btn btn-block btn-primary">
@@ -72,15 +84,15 @@
                     </a>
                 </div>
             </div>
-        </div>
+        </div> -->
 
-        <div class="listview-title mt-1">Theme</div>
+        <div class="listview-title mt-1">ธีม</div>
         <ul class="listview image-listview text inset no-line">
             <li>
                 <div class="item">
                     <div class="in">
                         <div>
-                            Dark Mode
+                            โหมดมืด
                         </div>
                         <div class="form-check form-switch  ms-2">
                             <input class="form-check-input dark-mode-switch" type="checkbox" id="darkmodeSwitch">
@@ -91,15 +103,15 @@
             </li>
         </ul>
 
-        <div class="listview-title mt-1">Notifications</div>
+        <div class="listview-title mt-1">การแจ้งเตือน</div>
         <ul class="listview image-listview text inset">
             <li>
                 <div class="item">
                     <div class="in">
                         <div>
-                            Payment Alert
+                            แจ้งเตือนการชำระเงิน
                             <div class="text-muted">
-                                Send notification when new payment received
+                                ส่งการแจ้งเตือนเมื่อได้รับการชำระเงินใหม่
                             </div>
                         </div>
                         <div class="form-check form-switch  ms-2">
@@ -112,34 +124,34 @@
             <li>
                 <a href="#" class="item">
                     <div class="in">
-                        <div>Notification Sound</div>
+                        <div>เสียงแจ้งเตือน</div>
                         <span class="text-primary">Beep</span>
                     </div>
                 </a>
             </li>
         </ul>
 
-        <div class="listview-title mt-1">Profile Settings</div>
+        <div class="listview-title mt-1">ตั้งค่าผู้ใช้</div>
         <ul class="listview image-listview text inset">
             <li>
                 <a href="#" class="item">
                     <div class="in">
-                        <div>Change Username</div>
+                        <div>เปลี่ยนชื่อผู้ใช้</div>
                     </div>
                 </a>
             </li>
             <li>
                 <a href="#" class="item">
                     <div class="in">
-                        <div>Update E-mail</div>
+                        <div>เปลี่ยน E-mail</div>
                     </div>
                 </a>
             </li>
             <li>
                 <a href="#" class="item">
                     <div class="in">
-                        <div>Address</div>
-                        <span class="text-primary">Edit</span>
+                        <div>ที่อยู่</div>
+                        <span class="text-primary">แก้ไข</span>
                     </div>
                 </a>
             </li>
@@ -147,7 +159,7 @@
                 <div class="item">
                     <div class="in">
                         <div>
-                            Private Profile
+                            ตั้งโปรไฟล์ส่วนตัว
                         </div>
                         <div class="form-check form-switch ms-2">
                             <input class="form-check-input" type="checkbox" id="SwitchCheckDefault2">
@@ -158,12 +170,12 @@
             </li>
         </ul>
 
-        <div class="listview-title mt-1">Security</div>
+        <div class="listview-title mt-1">ความปลอดภัย</div>
         <ul class="listview image-listview text mb-2 inset">
             <li>
                 <a href="#" class="item">
                     <div class="in">
-                        <div>Update Password</div>
+                        <div>เปลี่ยนรหัสผ่าน</div>
                     </div>
                 </a>
             </li>
@@ -171,7 +183,7 @@
                 <div class="item">
                     <div class="in">
                         <div>
-                            2 Step Verification
+                            การยืนยันแบบ 2 ขั้นตอน
                         </div>
                         <div class="form-check form-switch ms-2">
                             <input class="form-check-input" type="checkbox" id="SwitchCheckDefault3" checked />
@@ -191,7 +203,7 @@
 
     </div>
     <!-- * App Capsule -->
-    
+
 
 
     <!-- App Bottom Menu -->

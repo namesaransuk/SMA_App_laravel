@@ -21,7 +21,7 @@
 
     <!-- loader -->
     <div id="loader">
-        <img src="assets/img/loading-icon.png" alt="icon" class="loading-icon">
+        <img src="<?php echo asset('img/loading-icon.png'); ?>" alt="icon" class="loading-icon">
     </div>
     <!-- * loader -->
 
@@ -36,10 +36,10 @@
             About
         </div>
         <div class="right">
-            <a href="app-notifications.html" class="headerButton">
+            <!-- <a href="app-notifications.html" class="headerButton">
                 <ion-icon class="icon" name="notifications-outline"></ion-icon>
                 <span class="badge badge-danger">4</span>
-            </a>
+            </a> -->
         </div>
     </div>
     <!-- * App Header -->
@@ -48,14 +48,14 @@
     <div id="appCapsule">
 
 
-        <div class="section full">
-            <img src="assets/img/sample/photo/wide3.jpg" alt="image" class="imaged w-100 square">
+        <div class="section full text-center">
+            <img src="<?php echo asset('img/loading-icon.png'); ?>" alt="image" class="pt-2 imaged w-25 square">
         </div>
 
         <div class="section mt-3 mb-3">
             <div class="card">
                 <div class="card-body">
-                    <h2 class="card-title">About us</h2>
+                    <h2 class="card-title">เกี่ยวกับเรา</h2>
                     Finapp is Bootstrap 5 based template for your wallet, banking, financial mobile projects.
                 </div>
             </div>
@@ -81,15 +81,15 @@
                     <ul class="splide__list">
 
                         <li class="splide__slide">
-                            <img src="assets/img/sample/photo/wide1.jpg" alt="alt" class="imaged w-100">
+                            <img src="<?php echo asset('img/sample/photo/wide1.jpg'); ?>" alt="alt" class="imaged w-100">
                         </li>
 
                         <li class="splide__slide">
-                            <img src="assets/img/sample/photo/wide2.jpg" alt="alt" class="imaged w-100">
+                            <img src="<?php echo asset('img/sample/photo/wide2.jpg'); ?>" alt="alt" class="imaged w-100">
                         </li>
 
                         <li class="splide__slide">
-                            <img src="assets/img/sample/photo/wide3.jpg" alt="alt" class="imaged w-100">
+                            <img src="<?php echo asset('img/sample/photo/wide3.jpg'); ?>" alt="alt" class="imaged w-100">
                         </li>
 
                     </ul>
@@ -104,7 +104,7 @@
                 <div class="card-body">
                     <h2 class="card-title">Have a Question?</h2>
                     <p>Feel free to contact us with any problems. We will get back to you as soon as possible.</p>
-                    <a href="app-contact.html" class="btn btn-primary">
+                    <a href="contact" class="btn btn-primary">
                         <ion-icon name="mail-open-outline"></ion-icon> Contact
                     </a>
                 </div>
@@ -113,42 +113,6 @@
 
     </div>
     <!-- * App Capsule -->
-
-
-    <!-- App Bottom Menu -->
-    <div class="appBottomMenu">
-        <a href="index.html" class="item">
-            <div class="col">
-                <ion-icon name="pie-chart-outline"></ion-icon>
-                <strong>Overview</strong>
-            </div>
-        </a>
-        <a href="app-pages.html" class="item">
-            <div class="col">
-                <ion-icon name="document-text-outline"></ion-icon>
-                <strong>Pages</strong>
-            </div>
-        </a>
-        <a href="app-components.html" class="item">
-            <div class="col">
-                <ion-icon name="apps-outline"></ion-icon>
-                <strong>Components</strong>
-            </div>
-        </a>
-        <a href="app-cards.html" class="item">
-            <div class="col">
-                <ion-icon name="card-outline"></ion-icon>
-                <strong>My Cards</strong>
-            </div>
-        </a>
-        <a href="app-settings.html" class="item">
-            <div class="col">
-                <ion-icon name="settings-outline"></ion-icon>
-                <strong>Settings</strong>
-            </div>
-        </a>
-    </div>
-    <!-- * App Bottom Menu -->
 
 
     <!-- ========= JS Files =========  -->

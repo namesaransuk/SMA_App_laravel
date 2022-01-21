@@ -21,7 +21,7 @@
 
     <!-- loader -->
     <div id="loader">
-        <img src="assets/img/loading-icon.png" alt="icon" class="loading-icon">
+        <img src="<?php echo asset('img/loading-icon.png'); ?>" alt="icon" class="loading-icon">
     </div>
     <!-- * loader -->
 
@@ -33,7 +33,7 @@
             </a>
         </div>
         <div class="pageTitle">
-            Contact
+            ติดต่อเรา
         </div>
         <div class="right">
             <a href="#" class="headerButton">
@@ -51,14 +51,14 @@
                 <div class="card-body">
                     <div class="p-1">
                         <div class="text-center">
-                            <h2 class="text-primary">Get in Touch</h2>
-                            <p>Fill the form to contact us</p>
+                            <h2 class="text-primary">สอบถามเกี่ยวกับปัญหา SMA Coin Wallet</h2>
+                            <p>กรอกแบบฟอร์มเพื่อติดต่อเรา</p>
                         </div>
                         <form>
                             <div class="form-group basic animated">
                                 <div class="input-wrapper">
-                                    <label class="label" for="name2">Your name</label>
-                                    <input type="text" class="form-control" id="name2" placeholder="Your name">
+                                    <label class="label" for="name2">ชื่อของคุณ</label>
+                                    <input type="text" class="form-control" id="name2" placeholder="ชื่อของคุณ">
                                     <i class="clear-input">
                                         <ion-icon name="close-circle"></ion-icon>
                                     </i>
@@ -67,8 +67,8 @@
 
                             <div class="form-group basic animated">
                                 <div class="input-wrapper">
-                                    <label class="label" for="email2">E-mail</label>
-                                    <input type="text" class="form-control" id="email2" placeholder="E-mail">
+                                    <label class="label" for="email2">E-mail สำหรับติดต่อ</label>
+                                    <input type="text" class="form-control" id="email2" placeholder="E-mail สำหรับติดต่อ">
                                     <i class="clear-input">
                                         <ion-icon name="close-circle"></ion-icon>
                                     </i>
@@ -77,9 +77,9 @@
 
                             <div class="form-group basic animated">
                                 <div class="input-wrapper">
-                                    <label class="label" for="textarea2">Message</label>
+                                    <label class="label" for="textarea2">ข้อความ</label>
                                     <textarea id="textarea2" rows="4" class="form-control"
-                                        placeholder="Message"></textarea>
+                                        placeholder="ข้อความ"></textarea>
                                     <i class="clear-input">
                                         <ion-icon name="close-circle"></ion-icon>
                                     </i>
@@ -87,7 +87,7 @@
                             </div>
 
                             <div class="mt-2">
-                                <button type="button" class="btn btn-primary btn-lg btn-block">Send</button>
+                                <button type="button" class="btn btn-primary btn-lg btn-block">ส่ง</button>
                             </div>
 
                         </form>
@@ -101,10 +101,10 @@
                 <div class="card-body">
                     <div class="p-1">
                         <div class="text-center">
-                            <h2 class="text-primary">Our Address</h2>
+                            <h2 class="text-primary">ที่อยู่ติดต่อ</h2>
                             <p class="card-text">
-                                PO Box 16122 Collins Street West<br>
-                                Victoria 8007 Australia
+                                2888 ลาดพร้าว 130 แขวงคลองจั่น เขตบางกะปิ<br>
+                                กรุงเทพมหานคร 10240
                             </p>
                         </div>
                     </div>
@@ -119,7 +119,7 @@
                         <div class="text-center">
                             <h2 class="text-primary mb-2">Social Profiles</h2>
 
-                            <a href="#" class="btn btn-facebook btn-icon me-05">
+                            <a href="https://www.facebook.com/smadropshipTH/" target="_blank" class="btn btn-facebook btn-icon me-05">
                                 <ion-icon name="logo-facebook"></ion-icon>
                             </a>
 
@@ -149,46 +149,8 @@
             </div>
         </div>
 
-
-
     </div>
     <!-- * App Capsule -->
-
-
-    <!-- App Bottom Menu -->
-    <div class="appBottomMenu">
-        <a href="index.html" class="item">
-            <div class="col">
-                <ion-icon name="pie-chart-outline"></ion-icon>
-                <strong>Overview</strong>
-            </div>
-        </a>
-        <a href="app-pages.html" class="item">
-            <div class="col">
-                <ion-icon name="document-text-outline"></ion-icon>
-                <strong>Pages</strong>
-            </div>
-        </a>
-        <a href="app-components.html" class="item">
-            <div class="col">
-                <ion-icon name="apps-outline"></ion-icon>
-                <strong>Components</strong>
-            </div>
-        </a>
-        <a href="app-cards.html" class="item">
-            <div class="col">
-                <ion-icon name="card-outline"></ion-icon>
-                <strong>My Cards</strong>
-            </div>
-        </a>
-        <a href="app-settings.html" class="item">
-            <div class="col">
-                <ion-icon name="settings-outline"></ion-icon>
-                <strong>Settings</strong>
-            </div>
-        </a>
-    </div>
-    <!-- * App Bottom Menu -->
 
 
     <!-- ========= JS Files =========  -->

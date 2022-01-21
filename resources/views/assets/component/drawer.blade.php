@@ -70,7 +70,7 @@
                             </div>
                             <div class="in">
                                 หน้าแรก
-                                <span class="badge badge-primary">10</span>
+                                <!-- <span class="badge badge-primary">10</span> -->
                             </div>
                         </a>
                     </li>
@@ -146,7 +146,7 @@
                 <!-- * others -->
 
                 <!-- send money -->
-                <div class="listview-title mt-1">Send Money</div>
+                <!-- <div class="listview-title mt-1">Send Money</div>
                 <ul class="listview image-listview flush transparent no-line">
                     <li>
                         <a href="#" class="item">
@@ -172,7 +172,7 @@
                             </div>
                         </a>
                     </li>
-                </ul>
+                </ul> -->
                 <!-- * send money -->
 
             </div>

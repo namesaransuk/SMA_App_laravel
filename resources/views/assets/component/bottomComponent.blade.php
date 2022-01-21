@@ -16,22 +16,6 @@
     </a>
     @endif
 
-    @if ($_SERVER['PHP_SELF'] == '/index.php/wallet')
-    <a href="wallet" class="item active">
-        <div class="col">
-            <ion-icon name="wallet-outline"></ion-icon>
-            <strong>วอลเล็ท</strong>
-        </div>
-    </a>
-    @else
-        <a href="wallet" class="item">
-        <div class="col">
-            <ion-icon name="wallet-outline"></ion-icon>
-            <strong>วอลเล็ท</strong>
-        </div>
-    </a>
-    @endif
-
     @if ($_SERVER['PHP_SELF'] == '/index.php/list')
     <a href="list" class="item active">
         <div class="col">
@@ -44,6 +28,26 @@
         <div class="col">
             <ion-icon name="list-outline"></ion-icon>
             <strong>รายการ</strong>
+        </div>
+    </a>
+    @endif
+
+    @if ($_SERVER['PHP_SELF'] == '/index.php/wallet')
+    <a href="wallet" class="item">
+        <div class="col">
+            <div class="action-button large">
+                <ion-icon name="wallet-outline"></ion-icon>
+                <!-- <strong>วอลเล็ท</strong> -->
+            </div>
+        </div>
+    </a>
+    @else
+    <a href="wallet" class="item">
+        <div class="col">
+            <div class="action-button large">
+                <ion-icon name="wallet-outline"></ion-icon>
+                <!-- <strong>วอลเล็ท</strong> -->
+            </div>
         </div>
     </a>
     @endif

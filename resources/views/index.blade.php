@@ -173,18 +173,18 @@
             <div class="row mt-2">
                 <div class="col-6">
                     <div class="stat-box">
-                        <div class="title">Income</div>
+                        <div class="title">เงินโอนเข้า</div>
                         <div class="value text-success">$ 552.95</div>
                     </div>
                 </div>
                 <div class="col-6">
                     <div class="stat-box">
-                        <div class="title">Expenses</div>
+                        <div class="title">โอนเงินออก</div>
                         <div class="value text-danger">$ 86.45</div>
                     </div>
                 </div>
             </div>
-            <div class="row mt-2">
+            <!-- <div class="row mt-2">
                 <div class="col-6">
                     <div class="stat-box">
                         <div class="title">Total Bills</div>
@@ -197,14 +197,14 @@
                         <div class="value">$ 120.99</div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
         <!-- * Stats -->
 
         <!-- Transactions -->
         <div class="section mt-4">
             <div class="section-heading">
-                <h2 class="title">Transactions</h2>
+                <h2 class="title">ประวัติการเงิน</h2>
                 <a href="app-transactions.html" class="link">View All</a>
             </div>
             <div class="transactions">
@@ -578,129 +578,6 @@
             <!-- * carousel multiple -->
         </div>
         <!-- * Monthly Bills -->
-
-
-        <!-- Saving Goals -->
-        <div class="section mt-4">
-            <div class="section-heading">
-                <h2 class="title">Saving Goals</h2>
-                <a href="app-savings.html" class="link">View All</a>
-            </div>
-            <div class="goals">
-                <!-- item -->
-                <div class="item">
-                    <div class="in">
-                        <div>
-                            <h4>Gaming Console</h4>
-                            <p>Gaming</p>
-                        </div>
-                        <div class="price">$ 499</div>
-                    </div>
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85"
-                            aria-valuemin="0" aria-valuemax="100">85%</div>
-                    </div>
-                </div>
-                <!-- * item -->
-                <!-- item -->
-                <div class="item">
-                    <div class="in">
-                        <div>
-                            <h4>New House</h4>
-                            <p>Living</p>
-                        </div>
-                        <div class="price">$ 100,000</div>
-                    </div>
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 55%;" aria-valuenow="55"
-                            aria-valuemin="0" aria-valuemax="100">55%</div>
-                    </div>
-                </div>
-                <!-- * item -->
-                <!-- item -->
-                <div class="item">
-                    <div class="in">
-                        <div>
-                            <h4>Sport Car</h4>
-                            <p>Lifestyle</p>
-                        </div>
-                        <div class="price">$ 42,500</div>
-                    </div>
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 15%;" aria-valuenow="15"
-                            aria-valuemin="0" aria-valuemax="100">15%</div>
-                    </div>
-                </div>
-                <!-- * item -->
-            </div>
-        </div>
-        <!-- * Saving Goals -->
-
-
-        <!-- News -->
-        <div class="section full mt-4 mb-3">
-            <div class="section-heading padding">
-                <h2 class="title">Lastest News</h2>
-                <a href="app-blog.html" class="link">View All</a>
-            </div>
-
-            <!-- carousel multiple -->
-            <div class="carousel-multiple splide">
-                <div class="splide__track">
-                    <ul class="splide__list">
-
-                        <li class="splide__slide">
-                            <a href="app-blog-post.html">
-                                <div class="blog-card">
-                                    <img src="assets/img/sample/photo/1.jpg" alt="image" class="imaged w-100">
-                                    <div class="text">
-                                        <h4 class="title">What will be the value of bitcoin in the next...</h4>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-
-                        <li class="splide__slide">
-                            <a href="app-blog-post.html">
-                                <div class="blog-card">
-                                    <img src="assets/img/sample/photo/2.jpg" alt="image" class="imaged w-100">
-                                    <div class="text">
-                                        <h4 class="title">Rules you need to know in business</h4>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-
-                        <li class="splide__slide">
-                            <a href="app-blog-post.html">
-                                <div class="blog-card">
-                                    <img src="assets/img/sample/photo/3.jpg" alt="image" class="imaged w-100">
-                                    <div class="text">
-                                        <h4 class="title">10 easy ways to save your money</h4>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-
-                        <li class="splide__slide">
-                            <a href="app-blog-post.html">
-                                <div class="blog-card">
-                                    <img src="assets/img/sample/photo/4.jpg" alt="image" class="imaged w-100">
-                                    <div class="text">
-                                        <h4 class="title">Follow the financial agenda with...</h4>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-
-                    </ul>
-                </div>
-            </div>
-            <!-- * carousel multiple -->
-
-        </div>
-        <!-- * News -->
-
 
         <!-- app footer -->
         <div class="appFooter">

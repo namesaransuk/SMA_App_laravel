@@ -21,7 +21,7 @@
 
     <!-- loader -->
     <div id="loader">
-        <img src="assets/img/loading-icon.png" alt="icon" class="loading-icon">
+        <img src="<?php echo asset('img/loading-icon.png'); ?>" alt="icon" class="loading-icon">
     </div>
     <!-- * loader -->
 
@@ -36,10 +36,10 @@
             FAQ
         </div>
         <div class="right">
-            <a href="app-notifications.html" class="headerButton">
+            <!-- <a href="app-notifications.html" class="headerButton">
                 <ion-icon class="icon" name="notifications-outline"></ion-icon>
                 <span class="badge badge-danger">4</span>
-            </a>
+            </a> -->
         </div>
     </div>
     <!-- * App Header -->
@@ -51,7 +51,7 @@
         <div class="section mt-2 text-center">
             <div class="card">
                 <div class="card-body pt-3 pb-3">
-                    <img src="assets/img/sample/photo/vector1.png" alt="image" class="imaged w-50 ">
+                    <img src="<?php echo asset('img/sample/photo/vector1.png'); ?>" alt="image" class="imaged w-50 ">
                     <h2 class="mt-2">Frequently Asked <br> Questions</h2>
                 </div>
             </div>
@@ -156,12 +156,12 @@
         <div class="section mt-3 mb-3">
             <div class="card bg-primary">
                 <div class="card-body text-center">
-                    <h5 class="card-title">Still have question?</h5>
+                    <h5 class="card-title">ยังมีคำถามอยู่ใช่ไหม ?</h5>
                     <p class="card-text">
-                        Feel free to contact us
+                        อย่าลังเลที่จะติดต่อเรา
                     </p>
                     <a href="#" class="btn btn-dark">
-                        <ion-icon name="mail-open-outline"></ion-icon> Contact
+                        <ion-icon name="mail-open-outline"></ion-icon> ติดต่อเรา
                     </a>
                 </div>
             </div>
@@ -169,42 +169,6 @@
 
     </div>
     <!-- * App Capsule -->
-
-
-    <!-- App Bottom Menu -->
-    <div class="appBottomMenu">
-        <a href="index.html" class="item">
-            <div class="col">
-                <ion-icon name="pie-chart-outline"></ion-icon>
-                <strong>Overview</strong>
-            </div>
-        </a>
-        <a href="app-pages.html" class="item">
-            <div class="col">
-                <ion-icon name="document-text-outline"></ion-icon>
-                <strong>Pages</strong>
-            </div>
-        </a>
-        <a href="app-components.html" class="item">
-            <div class="col">
-                <ion-icon name="apps-outline"></ion-icon>
-                <strong>Components</strong>
-            </div>
-        </a>
-        <a href="app-cards.html" class="item">
-            <div class="col">
-                <ion-icon name="card-outline"></ion-icon>
-                <strong>My Cards</strong>
-            </div>
-        </a>
-        <a href="app-settings.html" class="item">
-            <div class="col">
-                <ion-icon name="settings-outline"></ion-icon>
-                <strong>Settings</strong>
-            </div>
-        </a>
-    </div>
-    <!-- * App Bottom Menu -->
 
 
     <!-- ========= JS Files =========  -->
