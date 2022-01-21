@@ -12,14 +12,14 @@ return [
         'stack' => [
             'driver' => 'stack',
             'channels' => ['single'],
-            // 'ignore_exceptions' => false,
+            'ignore_exceptions' => false,
         ],
 
         'single' => [
             'driver' => 'errorlog',
-            'level' => 'debug',
+            // 'level' => 'debug',
             'path' => storage_path('logs/laravel.log'),
-            // 'level' => env('LOG_LEVEL', 'debug'),
+            'level' => env('LOG_LEVEL', 'debug'),
         ],
 
         'daily' => [
