@@ -3,26 +3,20 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="theme-color" content="#000000">
-    <title>Finapp</title>
+    <title>SMA Coin Wallet</title>
     <meta name="description" content="Finapp HTML Mobile Template">
     <meta name="keywords" content="bootstrap, wallet, banking, fintech mobile template, cordova, phonegap, mobile, html, responsive" />
-    <link rel="icon" type="image/png" href="<?php echo asset('img/favicon.png'); ?>" sizes="32x32">
-    <link rel="apple-touch-icon" sizes="180x180" href="<?php echo asset('img/icon/192x192.png'); ?>">
-    <link rel="stylesheet" href="<?php echo asset('css/style.css'); ?>">
-    <link rel="manifest" href="__manifest.json">
+    @include ('assets/component/link-style')
 </head>
 
 <body>
 
     <!-- loader -->
-    <div id="loader">
-        <img src="<?php echo asset('img/loading-icon.png'); ?>" alt="icon" class="loading-icon">
-    </div>
+    @include ('assets/component/loader')
     <!-- * loader -->
 
     <!-- App Header -->
@@ -52,7 +46,7 @@
                         <div class="form-group basic">
                             <div class="input-wrapper">
                                 <label class="label" for="password1">รหัสผ่านเก่า</label>
-                                <input type="password" class="form-control" id="password1" placeholder="">
+                                <input type="password" class="form-control" id="password1" placeholder="Type old password">
                                 <i class="clear-input">
                                     <ion-icon name="close-circle"></ion-icon>
                                 </i>
@@ -62,7 +56,7 @@
                         <div class="form-group basic">
                             <div class="input-wrapper">
                                 <label class="label" for="password2">รหัสผ่านใหม่</label>
-                                <input type="password" class="form-control" id="password2" placeholder="">
+                                <input type="password" class="form-control" id="password2" placeholder="Type new password">
                                 <i class="clear-input">
                                     <ion-icon name="close-circle"></ion-icon>
                                 </i>
@@ -72,7 +66,7 @@
                         <div class="form-group basic">
                             <div class="input-wrapper">
                                 <label class="label" for="password3">ยืนยันรหัสผ่านใหม่</label>
-                                <input type="password" class="form-control" id="password3" placeholder="ใส่รหัสผ่านใหม่อีกครั้ง">
+                                <input type="password" class="form-control" id="password3" placeholder="Again new password">
                                 <i class="clear-input">
                                     <ion-icon name="close-circle"></ion-icon>
                                 </i>
@@ -94,14 +88,7 @@
 
 
     <!-- ========= JS Files =========  -->
-    <!-- Bootstrap -->
-    <script src="<?php echo asset('js/lib/bootstrap.bundle.min.js'); ?>"></script>
-    <!-- Ionicons -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <!-- Splide -->
-    <script src="<?php echo asset('js/plugins/splide/splide.min.js'); ?>"></script>
-    <!-- Base Js File -->
-    <script src="<?php echo asset('js/base.js'); ?>"></script>
+    @include ('assets/component/link-script')
 
 
 </body>

@@ -3,26 +3,20 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="theme-color" content="#000000">
-    <title>Finapp</title>
+    <title>SMA Coin Wallet</title>
     <meta name="description" content="Finapp HTML Mobile Template">
     <meta name="keywords" content="bootstrap, wallet, banking, fintech mobile template, cordova, phonegap, mobile, html, responsive" />
-    <link rel="icon" type="image/png" href="assets/img/favicon.png" sizes="32x32">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/icon/192x192.png">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="manifest" href="__manifest.json">
+    @include ('assets/component/link-style')
 </head>
 
 <body>
 
     <!-- loader -->
-    <div id="loader">
-        <img src="assets/img/loading-icon.png" alt="icon" class="loading-icon">
-    </div>
+    @include ('assets/component/loader')
     <!-- * loader -->
 
     <!-- App Header -->
@@ -36,10 +30,10 @@
             Transactions
         </div>
         <div class="right">
-            <a href="app-notifications.html" class="headerButton">
+            <!-- <a href="app-notifications.html" class="headerButton">
                 <ion-icon class="icon" name="notifications-outline"></ion-icon>
                 <span class="badge badge-danger">4</span>
-            </a>
+            </a> -->
         </div>
     </div>
     <!-- * App Header -->
@@ -55,7 +49,7 @@
                 <!-- item -->
                 <a href="app-transaction-detail.html" class="item">
                     <div class="detail">
-                        <img src="assets/img/sample/brand/1.jpg" alt="img" class="image-block imaged w48">
+                        <img src="<?php echo asset('img/sample/brand/1.jpg" alt="') ?>img" class="image-block imaged w48">
                         <div>
                             <strong>Amazon</strong>
                             <p>Shopping</p>
@@ -69,7 +63,7 @@
                 <!-- item -->
                 <a href="app-transaction-detail.html" class="item">
                     <div class="detail">
-                        <img src="assets/img/sample/brand/2.jpg" alt="img" class="image-block imaged w48">
+                        <img src="<?php echo asset('img/sample/brand/2.jpg" alt="') ?>img" class="image-block imaged w48">
                         <div>
                             <strong>Apple</strong>
                             <p>Appstore Purchase</p>
@@ -83,7 +77,7 @@
                 <!-- item -->
                 <a href="app-transaction-detail.html" class="item">
                     <div class="detail">
-                        <img src="assets/img/sample/avatar/avatar3.jpg" alt="img" class="image-block imaged w48">
+                        <img src="<?php echo asset('img/sample/avatar/avatar3.jpg') ?>" alt="img" class="image-block imaged w48">
                         <div>
                             <strong>Alex Ljung</strong>
                             <p>Transfer</p>
@@ -97,7 +91,7 @@
                 <!-- item -->
                 <a href="app-transaction-detail.html" class="item">
                     <div class="detail">
-                        <img src="assets/img/sample/avatar/avatar4.jpg" alt="img" class="image-block imaged w48">
+                        <img src="<?php echo asset('img/sample/avatar/avatar4.jpg') ?>" alt="img" class="image-block imaged w48">
                         <div>
                             <strong>Beatriz Brito</strong>
                             <p>Transfer</p>
@@ -119,7 +113,7 @@
                 <!-- item -->
                 <a href="app-transaction-detail.html" class="item">
                     <div class="detail">
-                        <img src="assets/img/sample/brand/1.jpg" alt="img" class="image-block imaged w48">
+                        <img src="<?php echo asset('img/sample/brand/1.jpg') ?>" alt="img" class="image-block imaged w48">
                         <div>
                             <strong>Amazon</strong>
                             <p>Shopping</p>
@@ -133,7 +127,7 @@
                 <!-- item -->
                 <a href="app-transaction-detail.html" class="item">
                     <div class="detail">
-                        <img src="assets/img/sample/brand/2.jpg" alt="img" class="image-block imaged w48">
+                        <img src="<?php echo asset('img/sample/brand/2.jpg') ?>" alt="img" class="image-block imaged w48">
                         <div>
                             <strong>Apple</strong>
                             <p>Appstore Purchase</p>
@@ -155,7 +149,7 @@
                 <!-- item -->
                 <a href="app-transaction-detail.html" class="item">
                     <div class="detail">
-                        <img src="assets/img/sample/brand/3.jpg" alt="img" class="image-block imaged w48">
+                        <img src="<?php echo asset('img/sample/brand/3.jpg" alt="') ?>img" class="image-block imaged w48">
                         <div>
                             <strong>Envato</strong>
                             <p>Shopping</p>
@@ -177,7 +171,7 @@
                 <!-- item -->
                 <a href="app-notification-detail.html" class="item">
                     <div class="detail">
-                        <img src="assets/img/sample/brand/1.jpg" alt="img" class="image-block imaged w48">
+                        <img src="<?php echo asset('img/sample/brand/1.jpg" alt="') ?>img" class="image-block imaged w48">
                         <div>
                             <strong>Amazon</strong>
                             <p>Shopping</p>
@@ -191,7 +185,7 @@
                 <!-- item -->
                 <a href="app-notification-detail.html" class="item">
                     <div class="detail">
-                        <img src="assets/img/sample/brand/2.jpg" alt="img" class="image-block imaged w48">
+                        <img src="<?php echo asset('img/sample/brand/2.jpg" alt="') ?>img" class="image-block imaged w48">
                         <div>
                             <strong>Apple</strong>
                             <p>Shopping</p>
@@ -205,7 +199,7 @@
                 <!-- item -->
                 <a href="app-notification-detail.html" class="item">
                     <div class="detail">
-                        <img src="assets/img/sample/avatar/avatar7.jpg" alt="img" class="image-block imaged w48">
+                        <img src="<?php echo asset('img/sample/avatar/avatar7.jpg') ?>" alt="img" class="image-block imaged w48">
                         <div>
                             <strong>Lara Madrigal</strong>
                             <p>Transfer</p>
@@ -219,7 +213,7 @@
                 <!-- item -->
                 <a href="app-notification-detail.html" class="item">
                     <div class="detail">
-                        <img src="assets/img/sample/avatar/avatar6.jpg" alt="img" class="image-block imaged w48">
+                        <img src="<?php echo asset('img/sample/avatar/avatar6.jpg') ?>" alt="img" class="image-block imaged w48">
                         <div>
                             <strong>Dina Glenn</strong>
                             <p>Transfer</p>
@@ -242,52 +236,8 @@
     </div>
     <!-- * App Capsule -->
 
-
-    <!-- App Bottom Menu -->
-    <div class="appBottomMenu">
-        <a href="index.html" class="item">
-            <div class="col">
-                <ion-icon name="pie-chart-outline"></ion-icon>
-                <strong>Overview</strong>
-            </div>
-        </a>
-        <a href="app-pages.html" class="item">
-            <div class="col">
-                <ion-icon name="document-text-outline"></ion-icon>
-                <strong>Pages</strong>
-            </div>
-        </a>
-        <a href="app-components.html" class="item">
-            <div class="col">
-                <ion-icon name="apps-outline"></ion-icon>
-                <strong>Components</strong>
-            </div>
-        </a>
-        <a href="app-cards.html" class="item">
-            <div class="col">
-                <ion-icon name="card-outline"></ion-icon>
-                <strong>My Cards</strong>
-            </div>
-        </a>
-        <a href="app-settings.html" class="item">
-            <div class="col">
-                <ion-icon name="settings-outline"></ion-icon>
-                <strong>Settings</strong>
-            </div>
-        </a>
-    </div>
-    <!-- * App Bottom Menu -->
-
-
     <!-- ========= JS Files =========  -->
-    <!-- Bootstrap -->
-    <script src="assets/js/lib/bootstrap.bundle.min.js"></script>
-    <!-- Ionicons -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <!-- Splide -->
-    <script src="assets/js/plugins/splide/splide.min.js"></script>
-    <!-- Base Js File -->
-    <script src="assets/js/base.js"></script>
+    @include ('assets/component/link-script')
 
 
 </body>

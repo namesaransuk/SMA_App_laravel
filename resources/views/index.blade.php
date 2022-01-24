@@ -3,27 +3,22 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="theme-color" content="#000000">
-    <title>SMAapp</title>
+    <title>SMA Coin Wallet</title>
     <meta name="description" content="Finapp HTML Mobile Template">
-    <meta name="keywords"
-        content="bootstrap, wallet, banking, fintech mobile template, cordova, phonegap, mobile, html, responsive" />
-    <link rel="icon" type="image/png" href="<?php echo asset('img/favicon.png'); ?>" sizes="32x32">
-    <link rel="apple-touch-icon" sizes="180x180" href="<?php echo asset('img/icon/192x192.png'); ?>">
-    <link rel="stylesheet" type="text/css" href="<?php echo asset('css/style.css'); ?>">
-    <link rel="manifest" href="./__manifest.json">
+    <meta name="keywords" content="bootstrap, wallet, banking, fintech mobile template, cordova, phonegap, mobile, html, responsive" />
+    @include ('assets/component/link-style')
 </head>
 
 <body>
 
     <!-- loader -->
-    <div id="loader">
-        <img src="<?php echo asset('img/loading-icon.png'); ?>" alt="icon" class="loading-icon">
-    </div>
+    <!-- <div id="loader">
+        <img src="" alt="icon" class="loading-icon">
+    </div> -->
     <!-- * loader -->
 
     <!-- App Header -->
@@ -211,7 +206,7 @@
                 <!-- item -->
                 <a href="app-transaction-detail.html" class="item">
                     <div class="detail">
-                        <img src="assets/img/sample/brand/1.jpg" alt="img" class="image-block imaged w48">
+                        <img src="<?php echo asset('img/sample/brand/1.jpg" alt="') ?>img" class="image-block imaged w48">
                         <div>
                             <strong>Amazon</strong>
                             <p>Shopping</p>
@@ -225,7 +220,7 @@
                 <!-- item -->
                 <a href="app-transaction-detail.html" class="item">
                     <div class="detail">
-                        <img src="assets/img/sample/brand/2.jpg" alt="img" class="image-block imaged w48">
+                        <img src="<?php echo asset('img/sample/brand/2.jpg" alt="') ?>img" class="image-block imaged w48">
                         <div>
                             <strong>Apple</strong>
                             <p>Appstore Purchase</p>
@@ -239,7 +234,7 @@
                 <!-- item -->
                 <a href="app-transaction-detail.html" class="item">
                     <div class="detail">
-                        <img src="assets/img/sample/avatar/avatar3.jpg" alt="img" class="image-block imaged w48">
+                        <img src="<?php echo asset('img/sample/avatar/avatar3.jpg') ?>" alt="img" class="image-block imaged w48">
                         <div>
                             <strong>Alex Ljung</strong>
                             <p>Transfer</p>
@@ -253,7 +248,7 @@
                 <!-- item -->
                 <a href="app-transaction-detail.html" class="item">
                     <div class="detail">
-                        <img src="assets/img/sample/avatar/avatar4.jpg" alt="img" class="image-block imaged w48">
+                        <img src="<?php echo asset('img/sample/avatar/avatar4.jpg') ?>" alt="img" class="image-block imaged w48">
                         <div>
                             <strong>Beatriz Brito</strong>
                             <p>Transfer</p>
@@ -436,7 +431,7 @@
                         <li class="splide__slide">
                             <a href="#">
                                 <div class="user-card">
-                                    <img src="assets/img/sample/avatar/avatar2.jpg" alt="img" class="imaged w-100">
+                                    <img src="<?php echo asset('img/sample/avatar/avatar2.jpg') ?>" alt="img" class="imaged w-100">
                                     <strong>Jurrien</strong>
                                 </div>
                             </a>
@@ -444,7 +439,7 @@
                         <li class="splide__slide">
                             <a href="#">
                                 <div class="user-card">
-                                    <img src="assets/img/sample/avatar/avatar3.jpg" alt="img" class="imaged w-100">
+                                    <img src="<?php echo asset('img/sample/avatar/avatar3.jpg') ?>" alt="img" class="imaged w-100">
                                     <strong>Elwin</strong>
                                 </div>
                             </a>
@@ -452,7 +447,7 @@
                         <li class="splide__slide">
                             <a href="#">
                                 <div class="user-card">
-                                    <img src="assets/img/sample/avatar/avatar4.jpg" alt="img" class="imaged w-100">
+                                    <img src="<?php echo asset('img/sample/avatar/avatar4.jpg') ?>" alt="img" class="imaged w-100">
                                     <strong>Alma</strong>
                                 </div>
                             </a>
@@ -460,7 +455,7 @@
                         <li class="splide__slide">
                             <a href="#">
                                 <div class="user-card">
-                                    <img src="assets/img/sample/avatar/avatar5.jpg" alt="img" class="imaged w-100">
+                                    <img src="<?php echo asset('img/sample/avatar/avatar5.jpg') ?>" alt="img" class="imaged w-100">
                                     <strong>Justine</strong>
                                 </div>
                             </a>
@@ -468,7 +463,7 @@
                         <li class="splide__slide">
                             <a href="#">
                                 <div class="user-card">
-                                    <img src="assets/img/sample/avatar/avatar6.jpg" alt="img" class="imaged w-100">
+                                    <img src="<?php echo asset('img/sample/avatar/avatar6.jpg') ?>" alt="img" class="imaged w-100">
                                     <strong>Maria</strong>
                                 </div>
                             </a>
@@ -476,7 +471,7 @@
                         <li class="splide__slide">
                             <a href="#">
                                 <div class="user-card">
-                                    <img src="assets/img/sample/avatar/avatar7.jpg" alt="img" class="imaged w-100">
+                                    <img src="<?php echo asset('img/sample/avatar/avatar7.jpg') ?>" alt="img" class="imaged w-100">
                                     <strong>Pamela</strong>
                                 </div>
                             </a>
@@ -484,7 +479,7 @@
                         <li class="splide__slide">
                             <a href="#">
                                 <div class="user-card">
-                                    <img src="assets/img/sample/avatar/avatar8.jpg" alt="img" class="imaged w-100">
+                                    <img src="<?php echo asset('img/sample/avatar/avatar8.jpg') ?>" alt="img" class="imaged w-100">
                                     <strong>Neville</strong>
                                 </div>
                             </a>
@@ -492,7 +487,7 @@
                         <li class="splide__slide">
                             <a href="#">
                                 <div class="user-card">
-                                    <img src="assets/img/sample/avatar/avatar9.jpg" alt="img" class="imaged w-100">
+                                    <img src="<?php echo asset('img/sample/avatar/avatar9.jpg') ?>" alt="img" class="imaged w-100">
                                     <strong>Alex</strong>
                                 </div>
                             </a>
@@ -500,7 +495,7 @@
                         <li class="splide__slide">
                             <a href="#">
                                 <div class="user-card">
-                                    <img src="assets/img/sample/avatar/avatar10.jpg" alt="img" class="imaged w-100">
+                                    <img src="<?php echo asset('img/sample/avatar/avatar10.jpg') ?>" alt="img" class="imaged w-100">
                                     <strong>Stina</strong>
                                 </div>
                             </a>
@@ -526,7 +521,7 @@
                         <li class="splide__slide">
                             <div class="bill-box">
                                 <div class="img-wrapper">
-                                    <img src="assets/img/sample/brand/1.jpg" alt="img" class="image-block imaged w48">
+                                    <img src="<?php echo asset('img/sample/brand/1.jpg') ?>" alt="img" class="image-block imaged w48">
                                 </div>
                                 <div class="price">$ 14</div>
                                 <p>Prime Monthly Subscription</p>
@@ -537,7 +532,7 @@
                         <li class="splide__slide">
                             <div class="bill-box">
                                 <div class="img-wrapper">
-                                    <img src="assets/img/sample/brand/2.jpg" alt="img" class="image-block imaged w48">
+                                    <img src="<?php echo asset('img/sample/brand/2.jpg') ?>" alt="img" class="image-block imaged w48">
                                 </div>
                                 <div class="price">$ 9</div>
                                 <p>Music Monthly Subscription</p>
@@ -580,7 +575,7 @@
         <!-- * Monthly Bills -->
 
         <!-- app footer -->
-        <div class="appFooter">
+        <div class="appFooter mt-3">
             <div class="footer-title">
                 Copyright © Finapp 2021. All Rights Reserved.
             </div>
@@ -604,7 +599,7 @@
             @include ('assets/component/drawer')
             <!-- <div w3-include-HTML=""></div> -->
             <!-- sidebar body -->
-            
+
         </div>
     </div>
     <!-- * App Sidebar -->
@@ -618,14 +613,7 @@
 
 
     <!-- ========= JS Files =========  -->
-    <!-- Bootstrap -->
-    <script src="<?php echo asset('js/lib/bootstrap.bundle.min.js'); ?>"></script>
-    <!-- Ionicons -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <!-- Splide -->
-    <script src="<?php echo asset('js/plugins/splide/splide.min.js'); ?>"></script>
-    <!-- Base Js File -->
-    <script src="<?php echo asset('js/base.js'); ?>"></script>
+    @include ('assets/component/link-script')
 
     <script>
         // Add to Home with 2 seconds delay.

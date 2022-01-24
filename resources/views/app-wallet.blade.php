@@ -8,14 +8,11 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="theme-color" content="#000000">
-    <title>Finapp</title>
+    <title>SMA Coin Wallet</title>
     <meta name="description" content="Finapp HTML Mobile Template">
     <meta name="keywords"
         content="bootstrap, wallet, banking, fintech mobile template, cordova, phonegap, mobile, html, responsive" />
-        <link rel="icon" type="image/png" href="<?php echo asset('img/favicon.png'); ?>" sizes="32x32">
-    <link rel="apple-touch-icon" sizes="180x180" href="<?php echo asset('img/icon/192x192.png'); ?>">
-    <link rel="stylesheet" type="text/css" href="<?php echo asset('css/style.css'); ?>">
-    <link rel="manifest" href="__manifest.json">
+        @include ('assets/component/link-style')
 </head>
 
 <body>
@@ -203,7 +200,7 @@
         <div class="section mt-4">
             <div class="section-heading">
                 <h2 class="title">ประวัติการเพิ่ม Coin</h2>
-                <a href="crypto-transactions.html" class="link">ดูทั้งหมด</a>
+                <a href="transactions" class="link">ดูทั้งหมด</a>
             </div>
             <div class="card">
                 <ul class="listview flush transparent no-line image-listview detailed-list mt-1 mb-1">
@@ -280,7 +277,7 @@
         <div class="section mt-4">
             <div class="section-heading">
                 <h2 class="title">ช่องทางการโอน</h2>
-                <a href="crypto-transactions.html" class="link">ดูทั้งหมด</a>
+                <!-- <a href="crypto-transactions.html" class="link">ดูทั้งหมด</a> -->
             </div>
             <div class="carousel-single splide">
                 <div class="splide__track">
@@ -343,22 +340,22 @@
                             <div class="card card-with-icon">
                                 <div class="card-body pt-3 pb-3 text-center">
                                     <div class="card-icon mb-2">
-                                        <ion-icon name="chatbox-ellipses"></ion-icon>
+                                    <img src="<?php echo asset('img/sample/qr.png') ?>" alt="QR Code" class="imaged w-100" style="border-radius: 50%;">
                                     </div>
-                                    <h3 class="card-titlde mb-1">Join Our Group Chat</h3>
+                                    <h3 class="card-titlde mb-1">ทำรายการผ่าน QR Code</h3>
 
-                                    <p>Let's talk about the market and strategiest!</p>
+                                    <p>หรือสแกนจ่ายผ่าน QR Code เพื่อความสะดวกรวดเร็ว</p>
                                     <div class="row">
                                         <div class="col">
-                                            <a href="component-messages.html" class="btn btn-block btn-primary">
-                                                Join now
+                                            <a href="qr-code" class="btn btn-block btn-primary w-25">
+                                                สแกน
                                             </a>
                                         </div>
-                                        <div class="col">
+                                        <!-- <div class="col">
                                             <a href="component-messages.html" class="btn btn-block btn-secondary">
                                                 View groups
                                             </a>
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
                             </div>
@@ -521,16 +518,7 @@
 
 
     <!-- ========= JS Files =========  -->
-    <!-- Bootstrap -->
-    <script src="<?php echo asset('js/lib/bootstrap.bundle.min.js'); ?>"></script>
-    <!-- Ionicons -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <!-- Splide -->
-    <script src="<?php echo asset('js/plugins/splide/splide.min.js'); ?>"></script>
-    <!-- Apex Charts -->
-    <script src="<?php echo asset('js/plugins/apexcharts/apexcharts.min.js'); ?>"></script>
-    <!-- Base Js File -->
-    <script src="<?php echo asset('js/base.js'); ?>"></script>
+    @include ('assets/component/link-script')
 
     <script>
 

@@ -80,3 +80,11 @@ Route::get('/change-email', function () {
 Route::get('/change-password', function () {
     return view('app-change-password');
 });
+
+Route::get('/transactions', function () {
+    return view('app-transactions');
+});
+
+Route::get('/qr-code', function () {
+    return view('app-qr-code');
+});

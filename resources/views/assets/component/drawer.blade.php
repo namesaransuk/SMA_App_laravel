@@ -15,7 +15,7 @@
                 </div>
                 <!-- * profile box -->
                 <!-- balance -->
-                <div class="sidebar-balance">
+                <div class="sidebar-balance pb-2">
                     <div class="listview-title">ยอดเงินปัจจุบัน</div>
                     <div class="in">
                         <h1 class="amount">$ 2,000.50</h1>
@@ -24,7 +24,7 @@
                 <!-- * balance -->
 
                 <!-- action group -->
-                <div class="action-group">
+                <!-- <div class="action-group">
                     <a href="index.html" class="action-button">
                         <div class="in">
                             <div class="iconbox">
@@ -57,14 +57,14 @@
                             แลกเปลี่ยน
                         </div>
                     </a>
-                </div>
+                </div> -->
                 <!-- * action group -->
 
                 <!-- menu -->
                 <div class="listview-title mt-1">Menu</div>
                 <ul class="listview flush transparent no-line image-listview">
                     <li>
-                        <a href="index.html" class="item">
+                        <a href="/" class="item">
                             <div class="icon-box bg-primary">
                                 <ion-icon name="home-outline"></ion-icon>
                             </div>
@@ -75,7 +75,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="app-pages.html" class="item">
+                        <a href="wallet" class="item">
                             <div class="icon-box bg-primary">
                                 <ion-icon name="wallet-outline"></ion-icon>
                             </div>
@@ -85,7 +85,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="app-components.html" class="item">
+                        <a href="list" class="item">
                             <div class="icon-box bg-primary">
                                 <ion-icon name="list-outline"></ion-icon>
                             </div>
@@ -95,7 +95,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="app-cards.html" class="item">
+                        <a href="notifications" class="item">
                             <div class="icon-box bg-primary">
                                 <ion-icon name="notifications-outline"></ion-icon>
                             </div>
@@ -111,7 +111,7 @@
                 <div class="listview-title mt-1">Others</div>
                 <ul class="listview flush transparent no-line image-listview">
                     <li>
-                        <a href="app-settings.html" class="item">
+                        <a href="settings" class="item">
                             <div class="icon-box bg-primary">
                                 <ion-icon name="settings-outline"></ion-icon>
                             </div>
@@ -131,7 +131,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="app-login.html" class="item">
+                        <a href="#!" class="item">
                             <div class="icon-box bg-primary">
                                 <ion-icon name="log-out-outline"></ion-icon>
                             </div>
