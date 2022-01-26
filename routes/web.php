@@ -88,3 +88,11 @@ Route::get('/transactions', function () {
 Route::get('/qr-code', function () {
     return view('app-qr-code');
 });
+
+Route::get('/dc-card', function () {
+    return view('app-dc-card');
+});
+
+Route::get('/bank-account', function () {
+    return view('app-bank-account');
+});

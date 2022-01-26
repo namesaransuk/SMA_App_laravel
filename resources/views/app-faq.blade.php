@@ -46,7 +46,7 @@
             <div class="card">
                 <div class="card-body pt-3 pb-3">
                     <!-- <img src="<?php echo asset('img/loading-icon.png'); ?>" alt="image" class="imaged w-25 "> -->
-                    <img src="<?php echo asset('img/logo.png'); ?>" alt="image" class="imaged w-75 ">
+                    <img src="<?php echo asset('img/logo.png'); ?>" alt="image" class="imaged w-50 ">
                     <h2 class="mt-2">มีข้อสงสัยใช่ไหม ? <br> คำถามที่พบบ่อย</h2>
                 </div>
             </div>
@@ -57,7 +57,7 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion01">
-                            What is Finapp?
+                            SMA Coin Wallet คืออะไร ?
                         </button>
                     </h2>
                     <div id="accordion01" class="accordion-collapse collapse" data-bs-parent="#accordionExample1">

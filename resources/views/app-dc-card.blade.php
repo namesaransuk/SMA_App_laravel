@@ -11,10 +11,7 @@
     <title>Finapp</title>
     <meta name="description" content="Finapp HTML Mobile Template">
     <meta name="keywords" content="bootstrap, wallet, banking, fintech mobile template, cordova, phonegap, mobile, html, responsive" />
-    <link rel="icon" type="image/png" href="assets/img/favicon.png" sizes="32x32">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/icon/192x192.png">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="manifest" href="__manifest.json">
+    @include ('assets/component/link-style')
 </head>
 
 <body>
@@ -447,15 +444,7 @@
 
 
     <!-- ========= JS Files =========  -->
-    <!-- Bootstrap -->
-    <script src="assets/js/lib/bootstrap.bundle.min.js"></script>
-    <!-- Ionicons -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <!-- Splide -->
-    <script src="assets/js/plugins/splide/splide.min.js"></script>
-    <!-- Base Js File -->
-    <script src="assets/js/base.js"></script>
-    <script src="assets/js/w3-include-HTML.js"></script>
+    @include ('assets/component/link-script')
 
 
 </body>

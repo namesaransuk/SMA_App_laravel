@@ -24,9 +24,9 @@
     <!-- App Header -->
     <div class="appHeader bg-primary text-light">
         <div class="left">
-            <!-- <a href="#" class="headerButton goBack">
-                <ion-icon name="chevron-back-outline"></ion-icon>
-            </a> -->
+            <a href="#" class="headerButton" data-bs-toggle="modal" data-bs-target="#sidebarPanel">
+                <ion-icon name="menu-outline"></ion-icon>
+            </a>
         </div>
         <div class="pageTitle">
             รายการ
@@ -410,6 +410,18 @@
     <!-- App Bottom Menu -->
     @include ('assets/component/bottomComponent')
     <!-- * App Bottom Menu -->
+
+    <!-- App Sidebar -->
+    <div class="modal fade panelbox panelbox-left" id="sidebarPanel" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+
+            <!-- sidebar body -->
+            @include ('assets/component/drawer')
+            <!-- sidebar body -->
+
+        </div>
+    </div>
+    <!-- * App Sidebar -->
 
 
     <!-- ========= JS Files =========  -->

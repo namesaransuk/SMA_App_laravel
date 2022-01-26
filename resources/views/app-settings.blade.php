@@ -91,7 +91,7 @@
             <li>
                 <a href="change-username" class="item">
                     <div class="in">
-                        <div>เปลี่ยนชื่อผู้ใช้</div>
+                        <div>เปลี่ยนบัญชีผู้ใช้</div>
                     </div>
                 </a>
             </li>
@@ -99,14 +99,6 @@
                 <a href="change-email" class="item">
                     <div class="in">
                         <div>เปลี่ยน E-mail</div>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="item">
-                    <div class="in">
-                        <div>ที่อยู่</div>
-                        <span class="text-primary">แก้ไข</span>
                     </div>
                 </a>
             </li>
@@ -141,7 +133,7 @@
                             การยืนยันแบบ 2 ขั้นตอน
                         </div>
                         <div class="form-check form-switch ms-2">
-                            <input class="form-check-input" type="checkbox" id="SwitchCheckDefault3" checked />
+                            <input class="form-check-input" type="checkbox" id="SwitchCheckDefault3" />
                             <label class="form-check-label" for="SwitchCheckDefault3"></label>
                         </div>
                     </div>

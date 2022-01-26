@@ -3,16 +3,14 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="theme-color" content="#000000">
     <title>SMA Coin Wallet</title>
     <meta name="description" content="Finapp HTML Mobile Template">
-    <meta name="keywords"
-        content="bootstrap, wallet, banking, fintech mobile template, cordova, phonegap, mobile, html, responsive" />
-        @include ('assets/component/link-style')
+    <meta name="keywords" content="bootstrap, wallet, banking, fintech mobile template, cordova, phonegap, mobile, html, responsive" />
+    @include ('assets/component/link-style')
 </head>
 
 <body>
@@ -25,14 +23,13 @@
 
     <!-- App Header -->
     <div class="appHeader bg-primary text-light">
-        <div class="left">
+    <div class="left">
             <a href="#" class="headerButton" data-bs-toggle="modal" data-bs-target="#sidebarPanel">
-                <img src="<?php echo asset('img/sample/avatar/avatar1.jpg'); ?>" alt="image" class="imaged rounded w32">
-                <span class="badge badge-danger">10</span>
+                <ion-icon name="menu-outline"></ion-icon>
             </a>
         </div>
         <div class="pageTitle">
-            SMA Crypto Wallet
+            Wallet
         </div>
         <div class="right">
             <!-- <a href="app-notifications.html" class="headerButton">
@@ -51,14 +48,29 @@
         <!-- Wallet -->
         <div class="section full gradientSection">
             <div class="in">
-                <h5 class="title mb-2">ยอดเงินปัจจุบัน</h5>
-                <h1 class="total">2,562.50 บาท</h1>
-                <h4 class="caption">
-                    <!-- <span class="iconbox text-success">
-                        <ion-icon name="trending-up-outline"></ion-icon>
-                    </span>
-                    0.053205 BTC -->
-                </h4>
+
+                <div class="row">
+                    <div class="col">
+                        <h5 class="title mb-2">ยอดเงินปัจจุบัน</h5>
+                        <h1 class="total">2,562.50</h1>
+                        <h4 class="caption">
+                            <!-- <span class="iconbox text-success">
+                                <ion-icon name="trending-up-outline"></ion-icon>
+                            </span> -->
+                            บาท
+                        </h4>
+                    </div>
+                    <div class="col">
+                        <h5 class="title mb-2">เหรียญปัจจุบัน</h5>
+                        <h1 class="total">999</h1>
+                        <h4 class="caption">
+                            <span class="iconbox text-success">
+                                <ion-icon name="trending-up-outline"></ion-icon>
+                            </span>
+                            0.053205 SMA
+                        </h4>
+                    </div>
+                </div>
                 <div class="wallet-inline-button mt-5">
                     <a href="#" class="item" data-bs-toggle="modal" data-bs-target="#depositActionSheet">
                         <div class="iconbox">
@@ -301,8 +313,7 @@
 
                                     <p class="mt-1">ชำระเงินทันทีที่เรายืนยันธุรกรรมเมื่อคุณชำระเงินในแอปพลิเคชันรหัส QR
                                         สำเร็จ</p>
-                                    <img src="https://smadropship.com/assets/images/bankicon/scbppt.jpg" width="75%"
-                                        alt="">
+                                    <img src="https://smadropship.com/assets/images/bankicon/scbppt.jpg" width="75%" alt="">
                                     <!-- <div class="row">
                                         <div class="col">
                                             <a href="#" class="btn btn-secondary">
@@ -340,7 +351,7 @@
                             <div class="card card-with-icon">
                                 <div class="card-body pt-3 pb-3 text-center">
                                     <div class="card-icon mb-2">
-                                    <img src="<?php echo asset('img/sample/qr.png') ?>" alt="QR Code" class="imaged w-100" style="border-radius: 50%;">
+                                        <img src="<?php echo asset('img/sample/qr.png') ?>" alt="QR Code" class="imaged w-100" style="border-radius: 50%;">
                                     </div>
                                     <h3 class="card-titlde mb-1">ทำรายการผ่าน QR Code</h3>
 
@@ -521,7 +532,6 @@
     @include ('assets/component/link-script')
 
     <script>
-
         var sparklineAreaExampleSuccess1 = {
             series: [{
                 data: [555, 1222, 777, 888, 555, 888, 999, 1222]
@@ -604,14 +614,13 @@
         };
 
 
-        document.addEventListener('DOMContentLoaded', function () {
+        document.addEventListener('DOMContentLoaded', function() {
             document.querySelectorAll('.chart-sparkline-success-1').forEach(chart => new ApexCharts(chart, sparklineAreaExampleSuccess1).render());
             document.querySelectorAll('.chart-sparkline-success-2').forEach(chart => new ApexCharts(chart, sparklineAreaExampleSuccess2).render());
             document.querySelectorAll('.chart-sparkline-danger-1').forEach(chart => new ApexCharts(chart, sparklineAreaExampleDanger1).render());
             document.querySelectorAll('.chart-sparkline-danger-2').forEach(chart => new ApexCharts(chart, sparklineAreaExampleDanger2).render());
 
         })
-
     </script>
 
 </body>

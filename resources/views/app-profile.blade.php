@@ -11,6 +11,12 @@
     <meta name="description" content="Finapp HTML Mobile Template">
     <meta name="keywords" content="bootstrap, wallet, banking, fintech mobile template, cordova, phonegap, mobile, html, responsive" />
     @include ('assets/component/link-style')
+
+    <style>
+        .ion-carousel {
+            font-size: 35px;
+        }
+    </style>
 </head>
 
 <body>
@@ -68,131 +74,100 @@
             </div>
         </div>
 
-        <!-- <div class="container mt-3">
-            <div class="row">
-                <div class="col">
-                    <a href="login" class="btn btn-block btn-primary">
-                        เข้าสู่ระบบ
-                    </a>
-                </div>
-                <div class="col">
-                    <a href="register" class="btn btn-block btn-secondary">
-                        สมัครสมาชิก
-                    </a>
+        <div class="section full mt-2">
+            <div class="section-title mb-1">เมนู</div>
+
+            <!-- carousel small -->
+            <div class="carousel-small splide">
+                <div class="splide__track">
+                    <ul class="splide__list text-center">
+                        <li class="splide__slide">
+                            <a href="#">
+                                <ion-icon name="cash-outline" class="ion-carousel bg-primary p-2 rounded-circle"></ion-icon>
+                            </a>
+                            <p>first</p>
+                        </li>
+                        <li class="splide__slide">
+                            <a href="#">
+                                <ion-icon name="cash-outline" class="ion-carousel bg-primary p-2 rounded-circle"></ion-icon>
+                            </a>
+                            <p>second</p>
+                        </li>
+                        <li class="splide__slide">
+                            <a href="#">
+                                <ion-icon name="cash-outline" class="ion-carousel bg-primary p-2 rounded-circle"></ion-icon>
+                            </a>
+                            <p>third</p>
+                        </li>
+                        <li class="splide__slide">
+                            <a href="#">
+                                <ion-icon name="cash-outline" class="ion-carousel bg-primary p-2 rounded-circle"></ion-icon>
+                            </a>
+                            <p>fourth</p>
+                        </li>
+                        <li class="splide__slide">
+                            <a href="#">
+                                <ion-icon name="cash-outline" class="ion-carousel bg-primary p-2 rounded-circle"></ion-icon>
+                            </a>
+                            <p>fifth</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </div> -->
+            <!-- * carousel small -->
 
-        <div class="listview-title mt-1">ธีม</div>
-        <ul class="listview image-listview text inset no-line">
-            <li>
-                <div class="item">
-                    <div class="in">
-                        <div>
-                            โหมดมืด
-                        </div>
-                        <div class="form-check form-switch  ms-2">
-                            <input class="form-check-input dark-mode-switch" type="checkbox" id="darkmodeSwitch">
-                            <label class="form-check-label" for="darkmodeSwitch"></label>
-                        </div>
-                    </div>
-                </div>
-            </li>
-        </ul>
+        </div>
 
-        <div class="listview-title mt-1">การแจ้งเตือน</div>
+        <div class="listview-title mt-1">ตั้งค่าการชำระเงิน</div>
         <ul class="listview image-listview text inset">
-            <li>
-                <div class="item">
-                    <div class="in">
-                        <div>
-                            แจ้งเตือนการชำระเงิน
-                            <div class="text-muted">
-                                ส่งการแจ้งเตือนเมื่อได้รับการชำระเงินใหม่
-                            </div>
-                        </div>
-                        <div class="form-check form-switch  ms-2">
-                            <input class="form-check-input" type="checkbox" id="SwitchCheckDefault1">
-                            <label class="form-check-label" for="SwitchCheckDefault1"></label>
-                        </div>
-                    </div>
-                </div>
-            </li>
             <li>
                 <a href="#" class="item">
-                    <div class="in">
-                        <div>เสียงแจ้งเตือน</div>
-                        <span class="text-primary">Beep</span>
+                    <div class="icon-box bg-primary">
+                        <ion-icon name="cash-outline"></ion-icon>
                     </div>
-                </a>
-            </li>
-        </ul>
-
-        <div class="listview-title mt-1">ตั้งค่าผู้ใช้</div>
-        <ul class="listview image-listview text inset">
-            <li>
-                <a href="change-username" class="item">
                     <div class="in">
-                        <div>เปลี่ยนชื่อผู้ใช้</div>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="change-email" class="item">
-                    <div class="in">
-                        <div>เปลี่ยน E-mail</div>
+                        <div>ยอดเงินคงเหลือ</div>
                     </div>
                 </a>
             </li>
             <li>
                 <a href="#" class="item">
+                    <div class="icon-box bg-primary">
+                        <ion-icon name="cash-outline"></ion-icon>
+                    </div>
+                    <div class="in">
+                        <div>เหรียญ SMA ของฉัน</div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="bank-account" class="item">
+                    <div class="icon-box bg-primary">
+                        <ion-icon name="reader-outline"></ion-icon>
+                    </div>
+                    <div class="in">
+                        <div>บัญชีธนาคารของฉัน</div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="dc-card" class="item">
+                    <div class="icon-box bg-primary">
+                        <ion-icon name="card-outline"></ion-icon>
+                    </div>
+                    <div class="in">
+                        <div>บัตรเดบิต/เครดิตของฉัน</div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="item">
+                    <div class="icon-box bg-primary">
+                        <ion-icon name="home-outline"></ion-icon>
+                    </div>
                     <div class="in">
                         <div>ที่อยู่</div>
                         <span class="text-primary">แก้ไข</span>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <div class="item">
-                    <div class="in">
-                        <div>
-                            ตั้งโปรไฟล์ส่วนตัว
-                        </div>
-                        <div class="form-check form-switch ms-2">
-                            <input class="form-check-input" type="checkbox" id="SwitchCheckDefault2">
-                            <label class="form-check-label" for="SwitchCheckDefault2"></label>
-                        </div>
-                    </div>
-                </div>
-            </li>
-        </ul>
-
-        <div class="listview-title mt-1">ความปลอดภัย</div>
-        <ul class="listview image-listview text mb-2 inset">
-            <li>
-                <a href="change-password" class="item">
-                    <div class="in">
-                        <div>เปลี่ยนรหัสผ่าน</div>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <div class="item">
-                    <div class="in">
-                        <div>
-                            การยืนยันแบบ 2 ขั้นตอน
-                        </div>
-                        <div class="form-check form-switch ms-2">
-                            <input class="form-check-input" type="checkbox" id="SwitchCheckDefault3" checked />
-                            <label class="form-check-label" for="SwitchCheckDefault3"></label>
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <a href="#" class="item">
-                    <div class="in">
-                        <div>Log out all devices</div>
                     </div>
                 </a>
             </li>
