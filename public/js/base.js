@@ -264,7 +264,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelectorAll('.carousel-small').forEach(carousel => new Splide(carousel, {
         perPage: 9,
         rewind: false,
-        // type: "loop",
+        type: "loop",
         gap: 16,
         padding: 16,
         arrows: false,

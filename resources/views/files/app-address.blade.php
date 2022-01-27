@@ -3,7 +3,8 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="theme-color" content="#000000">
@@ -27,7 +28,7 @@
             </a>
         </div>
         <div class="pageTitle">
-            บัญชีธนาคารของฉัน
+            My Savings
         </div>
         <div class="right">
             <a href="#" class="headerButton" data-bs-toggle="modal" data-bs-target="#actionSheetForm">
@@ -42,7 +43,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">เพิ่มบัญชีธนาคาร</h5>
+                    <h5 class="modal-title">New Saving Goal</h5>
                 </div>
                 <div class="modal-body">
                     <div class="action-sheet-content">
@@ -50,7 +51,7 @@
                         <form>
                             <div class="form-group basic">
                                 <div class="input-wrapper">
-                                    <label class="label" for="account1">เลือกบัญชีธนาคาร</label>
+                                    <label class="label" for="account1">Saving Category</label>
                                     <select class="form-control custom-select" id="account1">
                                         <option value="0">Lifestyle</option>
                                         <option value="1">Living</option>
@@ -64,27 +65,27 @@
 
                             <div class="form-group basic">
                                 <div class="input-wrapper">
-                                    <label class="label">ชื่อบัญชีธนาคาร</label>
-                                    <input type="text" class="form-control" placeholder="Enter name on card">
+                                    <label class="label">Title</label>
+                                    <input type="text" class="form-control" placeholder="Enter a title">
                                     <i class="clear-input">
                                         <ion-icon name="close-circle"></ion-icon>
                                     </i>
                                 </div>
+                                <div class="input-info">Minimum $100</div>
                             </div>
 
                             <div class="form-group basic">
-                                <div class="input-wrapper">
-                                    <label class="label">หมายเลขบัญชีธนาคาร</label>
-                                    <input type="text" class="form-control" placeholder="Enter number card">
-                                    <i class="clear-input">
-                                        <ion-icon name="close-circle"></ion-icon>
-                                    </i>
+                                <label class="label">Enter Total Amount</label>
+                                <div class="input-group">
+                                    <span class="input-group-text" id="basic-addon1">$</span>
+                                    <input type="text" class="form-control" placeholder="Enter an amount" value="100">
                                 </div>
+                                <div class="input-info">Minimum $50</div>
                             </div>
 
                             <div class="form-group basic">
                                 <button type="button" class="btn btn-primary btn-block btn-lg"
-                                    data-bs-dismiss="modal">เพิ่ม</button>
+                                    data-bs-dismiss="modal">Add Goal</button>
                             </div>
                         </form>
 
@@ -105,20 +106,14 @@
                 <div class="item">
                     <div class="in">
                         <div>
-                            <h4>MasterCard</h4>
-                            <p>เลขลงท้าย **69</p>
+                            <h4>Gaming Console</h4>
+                            <p>Gaming</p>
                         </div>
-                        <div>
-                            <button type="button" class="btn btn-icon btn-primary me-1">
-                                <ion-icon name="create-outline"></ion-icon>
-                            </button>
-                            <button type="button" class="btn btn-icon btn-danger me-1">
-                                <ion-icon name="trash-outline"></ion-icon>
-                            </button>
-                        </div>
+                        <div class="price">$ 499</div>
                     </div>
                     <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+                        <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85"
+                            aria-valuemin="0" aria-valuemax="100">85%</div>
                     </div>
                 </div>
                 <!-- * item -->
@@ -126,20 +121,14 @@
                 <div class="item">
                     <div class="in">
                         <div>
-                            <h4>MasterCard</h4>
-                            <p>เลขลงท้าย **69</p>
+                            <h4>New House</h4>
+                            <p>Living</p>
                         </div>
-                        <div>
-                            <button type="button" class="btn btn-icon btn-primary me-1">
-                                <ion-icon name="create-outline"></ion-icon>
-                            </button>
-                            <button type="button" class="btn btn-icon btn-danger me-1">
-                                <ion-icon name="trash-outline"></ion-icon>
-                            </button>
-                        </div>
+                        <div class="price">$ 100,000</div>
                     </div>
                     <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+                        <div class="progress-bar" role="progressbar" style="width: 55%;" aria-valuenow="55"
+                            aria-valuemin="0" aria-valuemax="100">55%</div>
                     </div>
                 </div>
                 <!-- * item -->
@@ -147,20 +136,74 @@
                 <div class="item">
                     <div class="in">
                         <div>
-                            <h4>Visa</h4>
-                            <p>เลขลงท้าย **69</p>
+                            <h4>Sport Car</h4>
+                            <p>Lifestyle</p>
                         </div>
-                        <div>
-                            <button type="button" class="btn btn-icon btn-primary me-1">
-                                <ion-icon name="create-outline"></ion-icon>
-                            </button>
-                            <button type="button" class="btn btn-icon btn-danger me-1">
-                                <ion-icon name="trash-outline"></ion-icon>
-                            </button>
-                        </div>
+                        <div class="price">$ 42,500</div>
                     </div>
                     <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+                        <div class="progress-bar" role="progressbar" style="width: 15%;" aria-valuenow="15"
+                            aria-valuemin="0" aria-valuemax="100">15%</div>
+                    </div>
+                </div>
+                <!-- * item -->
+                <!-- item -->
+                <div class="item">
+                    <div class="in">
+                        <div>
+                            <h4>Education</h4>
+                            <p>Lifestyle</p>
+                        </div>
+                        <div class="price">$ 25,200</div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 35%;" aria-valuenow="35"
+                            aria-valuemin="0" aria-valuemax="100">35%</div>
+                    </div>
+                </div>
+                <!-- * item -->
+                <!-- item -->
+                <div class="item">
+                    <div class="in">
+                        <div>
+                            <h4>Computer</h4>
+                            <p>Lifestyle</p>
+                        </div>
+                        <div class="price">$ 1,500</div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60"
+                            aria-valuemin="0" aria-valuemax="100">60%</div>
+                    </div>
+                </div>
+                <!-- * item -->
+                <!-- item -->
+                <div class="item">
+                    <div class="in">
+                        <div>
+                            <h4>World Tour</h4>
+                            <p>Travel</p>
+                        </div>
+                        <div class="price">$ 10,000</div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 55%;" aria-valuenow="55"
+                            aria-valuemin="0" aria-valuemax="100">55%</div>
+                    </div>
+                </div>
+                <!-- * item -->
+                <!-- item -->
+                <div class="item">
+                    <div class="in">
+                        <div>
+                            <h4>Birthday Gift</h4>
+                            <p>Gift</p>
+                        </div>
+                        <div class="price">$ 500</div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90"
+                            aria-valuemin="0" aria-valuemax="100">90%</div>
                     </div>
                 </div>
                 <!-- * item -->
@@ -173,6 +216,7 @@
 
     <!-- ========= JS Files =========  -->
     @include ('assets/component/link-script')
+
 
 
 </body>

@@ -79,7 +79,7 @@
 
             <!-- carousel small -->
             <div class="carousel-small splide">
-                <div class="splide__track">
+                <div class="splide__track ">
                     <ul class="splide__list text-center">
                         <li class="splide__slide">
                             <a href="#">
@@ -133,7 +133,7 @@
             <li>
                 <a href="#" class="item">
                     <div class="icon-box bg-primary">
-                        <ion-icon name="cash-outline"></ion-icon>
+                    <ion-icon name="logo-bitcoin"></ion-icon>
                     </div>
                     <div class="in">
                         <div>เหรียญ SMA ของฉัน</div>
@@ -157,17 +157,6 @@
                     </div>
                     <div class="in">
                         <div>บัตรเดบิต/เครดิตของฉัน</div>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="#" class="item">
-                    <div class="icon-box bg-primary">
-                        <ion-icon name="home-outline"></ion-icon>
-                    </div>
-                    <div class="in">
-                        <div>ที่อยู่</div>
-                        <span class="text-primary">แก้ไข</span>
                     </div>
                 </a>
             </li>
