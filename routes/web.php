@@ -41,11 +41,11 @@ Route::get('/settings', function () {
     return view('app-settings');
 });
 
-Route::get('/login', function () {
+Route::get('/login1', function () {
     return view('app-login');
 });
 
-Route::get('/register', function () {
+Route::get('/register2', function () {
     return view('app-register');
 });
 
@@ -96,3 +96,7 @@ Route::get('/dc-card', function () {
 Route::get('/bank-account', function () {
     return view('app-bank-account');
 });
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
