@@ -13,11 +13,19 @@
         <form method="POST" action="{{ route('login') }}">
             @csrf
 
+            @if ($message = Session::get('error'))
+            <div class="alert alert-danger alert-block">
+                <button type="button" class="close" data-dismiss="alert">×</button>
+                <strong>{{ $message }}</strong>
+            </div>
+            @endif
+
+
             <div class="card">
                 <div class="card-body pb-1">
                     <div class="form-group basic">
                         <div class="input-wrapper">
-                            <label class="label" for="email1">E-mail</label>
+                            <label class="label" for="email">E-mail</label>
                             <input type="email" class="form-control @error('email') is-invalid @enderror" id="email" name="email" value="{{ old('email') }}" required autocomplete="Your Email" autofocus>
                             <i class="clear-input">
                                 <ion-icon name="close-circle"></ion-icon>
@@ -46,26 +54,27 @@
                             @enderror
                         </div>
                     </div>
-                </div>
-            </div>
+                    <div class="form-links mt-1 mb-2">
+                        <div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
 
-
-            <div class="form-links mt-2">
-                <div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
-
-                        <label class="form-check-label" for="remember">
-                            {{ __('Remember Me') }}
-                        </label>
+                                <label class="form-check-label" for="remember">
+                                    จดจำการเข้าสู่ระบบ
+                                </label>
+                            </div>
+                        </div>
+                        <div>
+                            @if (Route::has('password.request'))
+                            <a href="forgot-password" class="text-muted" href="{{ route('password.request') }}">ลืมรหัสผ่าน ?</a>
+                            @endif
+                        </div>
                     </div>
                 </div>
-                <div>
-                    @if (Route::has('password.request'))
-                    <a href="forgot-password" class="text-muted" href="{{ route('password.request') }}">ลืมรหัสผ่าน ?</a>
-                    @endif
-                </div>
             </div>
+
+
+
 
             <div class="container text-center my-4">
                 <div class="row">
@@ -75,22 +84,37 @@
 
                         <div class="row">
                             <div class="col text-center">
-                                <img src="{{ asset('img/logosocial/facebook.png') }}" style="width: 70%;" alt="">
+                            </div>
+
+                            <div class="col-10 mx-5 text-center">
+                                <div class="row mx-2">
+                                    <div class="col">
+                                        <img src="{{ asset('img/logosocial/facebook.png') }}" style="width: 100px;" alt="">
+                                        <p>Facebook</p>
+                                    </div>
+                                    <div class="col">
+                                        <img src="{{ asset('img/logosocial/google.png') }}" style="width: 100px;" alt="">
+                                        <p>Google</p>
+                                    </div>
+                                    <div class="col">
+                                        <img src="{{ asset('img/logosocial/line.png') }}" style="width: 100px;" alt="">
+                                        <p>Line</p>
+                                    </div>
+                                </div>
                             </div>
 
                             <div class="col text-center">
-                                <img src="{{ asset('img/logosocial/google.png') }}" style="width: 70%;" alt="">
-                            </div>
-
-                            <div class="col text-center">
-                                <img src="{{ asset('img/logosocial/line.png') }}" style="width: 70%;" alt="">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="form-button-group  transparent">
+            <div class="form-button-group transparent">
+                <a href="/register" type="button" class="btn btn-info">สมัครสมาชิก</a>
+            </div>
+
+            <div class="form-button-group transparent">
                 <button type="submit" class="btn btn-primary btn-block btn-lg">เข้าสู่ระบบ</button>
             </div>
 

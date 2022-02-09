@@ -176,8 +176,9 @@
         <div class="container px-3 my-3">
             <div class="row">
                 <div class="col">
-                    <a href="profile" class="btn btn-block btn-danger">
-                        ออกจากระบบ
+                    <a class="btn btn-danger btn-block" type="button" href="{{ route('logout') }}" onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                        {{ __('Logout') }}
                     </a>
                 </div>
             </div>

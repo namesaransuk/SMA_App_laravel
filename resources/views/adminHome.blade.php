@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container">
-<nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+    <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
         <div class="container">
             <a class="navbar-brand" href="{{ url('/') }}">
                 {{ config('app.name') }}
@@ -68,7 +68,7 @@
 
                     {{ __('You are logged in!') }}
 
-                    you are normal user
+                    you are admin
                     <br>
                     <a class="btn btn-primary" type="button" href="{{ route('logout') }}" onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
