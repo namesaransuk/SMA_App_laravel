@@ -52,7 +52,7 @@
         <div class="section pt-3 pb-3 full gradientSection text-center">
             <div class="avatar-section">
                 <a href="#">
-                    <img src="<?php echo asset('img/sample/avatar/avatar1.jpg'); ?>" alt="avatar" class="imaged w100 rounded">
+                    <img src="{{ asset('img/sample/avatar/avatar1.jpg'); }}" alt="avatar" class="imaged w100 rounded">
                     <span class="button">
                         <ion-icon name="camera-outline"></ion-icon>
                     </span>

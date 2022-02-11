@@ -70,7 +70,7 @@
             </div>
             <div class="splash-page mb-5">
                 <div class="mb-3">
-                    <img src="<?php echo asset('img/sample/qr.png') ?>" alt="QR Code" class="imaged square w140">
+                    <img src="{{ asset('img/sample/qr.png') }}" alt="QR Code" class="imaged square w140">
                 </div>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquam.

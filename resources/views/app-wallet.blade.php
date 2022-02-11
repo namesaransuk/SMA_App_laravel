@@ -262,7 +262,7 @@
                     <li>
                         <a href="#" class="item">
                             <div class="icon-box">
-                                <img src="<?php echo asset('img/sample/avatar/avatar4.jpg'); ?>" alt="image" class="imaged rounded w36">
+                                <img src="{{ asset('img/sample/avatar/avatar4.jpg'); }}" alt="image" class="imaged rounded w36">
                             </div>
                             <div class="in">
                                 <div>
@@ -299,7 +299,7 @@
                             <div class="card card-with-icon">
                                 <div class="card-body pt-3 pb-3 text-center">
                                     <div class="card-icon bg-success mb-2">
-                                        <img src="<?php echo asset('img/scb-logo.png'); ?>" width="65" alt="">
+                                        <img src="{{ asset('img/scb-logo.png'); }}" width="65" alt="">
                                         <!-- <ion-icon name="link"></ion-icon> -->
                                     </div>
                                     <h2 class="card-titlde mb-1">SCB</h2>
@@ -351,7 +351,7 @@
                             <div class="card card-with-icon">
                                 <div class="card-body pt-3 pb-3 text-center">
                                     <div class="card-icon mb-2">
-                                        <img src="<?php echo asset('img/sample/qr.png') ?>" alt="QR Code" class="imaged w-100" style="border-radius: 50%;">
+                                        <img src="{{ asset('img/sample/qr.png') }}" alt="QR Code" class="imaged w-100" style="border-radius: 50%;">
                                     </div>
                                     <h3 class="card-titlde mb-1">ทำรายการผ่าน QR Code</h3>
 

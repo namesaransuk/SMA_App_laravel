@@ -45,8 +45,8 @@
         <div class="section mt-2 text-center">
             <div class="card">
                 <div class="card-body pt-3 pb-3">
-                    <!-- <img src="<?php echo asset('img/loading-icon.png'); ?>" alt="image" class="imaged w-25 "> -->
-                    <img src="<?php echo asset('img/logo.png'); ?>" alt="image" class="imaged w-50 ">
+                    <!-- <img src="{{ asset('img/loading-icon.png'); }}" alt="image" class="imaged w-25 "> -->
+                    <img src="{{ asset('img/logo.png'); }}" alt="image" class="imaged w-50 ">
                     <h2 class="mt-2">มีข้อสงสัยใช่ไหม ? <br> คำถามที่พบบ่อย</h2>
                 </div>
             </div>

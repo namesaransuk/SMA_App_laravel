@@ -43,7 +43,7 @@
 
 
         <div class="section full text-center pt-3 pb-1">
-            <img src="<?php echo asset('img/logo.png'); ?>" alt="image" class="pt-2 imaged w-50 square">
+            <img src="{{ asset('img/logo.png'); }}" alt="image" class="pt-2 imaged w-50 square">
         </div>
 
         <div class="section mt-3 mb-3">
@@ -75,15 +75,15 @@
                     <ul class="splide__list">
 
                         <li class="splide__slide">
-                            <img src="<?php echo asset('img/sample/photo/wide1.jpg'); ?>" alt="alt" class="imaged w-100">
+                            <img src="{{ asset('img/sample/photo/wide1.jpg'); }}" alt="alt" class="imaged w-100">
                         </li>
 
                         <li class="splide__slide">
-                            <img src="<?php echo asset('img/sample/photo/wide2.jpg'); ?>" alt="alt" class="imaged w-100">
+                            <img src="{{ asset('img/sample/photo/wide2.jpg'); }}" alt="alt" class="imaged w-100">
                         </li>
 
                         <li class="splide__slide">
-                            <img src="<?php echo asset('img/sample/photo/wide3.jpg'); ?>" alt="alt" class="imaged w-100">
+                            <img src="{{ asset('img/sample/photo/wide3.jpg'); }}" alt="alt" class="imaged w-100">
                         </li>
 
                     </ul>

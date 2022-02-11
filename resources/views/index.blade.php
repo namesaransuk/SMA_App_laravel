@@ -29,16 +29,16 @@
             </a>
         </div>
         <div class="pageTitle">
-            <img src="<?php echo asset('img/logo.png'); ?>" alt="logo" class="logo">
+            <img src="{{ asset('img/logo.png'); }}" alt="logo" class="logo">
         </div>
         <div class="right">
             <!-- <a href="app-notifications.html" class="headerButton">
                 <ion-icon class="icon" name="notifications-outline"></ion-icon>
                 <span class="badge badge-danger">4</span>
             </a> -->
-            <a href="settings" class="headerButton">
+            <!-- <a href="settings" class="headerButton">
                 <ion-icon name="settings-outline"></ion-icon>
-            </a>
+            </a> -->
         </div>
     </div>
     <!-- * App Header -->
@@ -206,7 +206,7 @@
                 <!-- item -->
                 <a href="app-transaction-detail.html" class="item">
                     <div class="detail">
-                        <img src="<?php echo asset('img/sample/brand/1.jpg" alt="') ?>img" class="image-block imaged w48">
+                        <img src="{{ asset('img/sample/brand/1.jpg') }}" alt="img" class="image-block imaged w48">
                         <div>
                             <strong>Amazon</strong>
                             <p>Shopping</p>
@@ -220,7 +220,7 @@
                 <!-- item -->
                 <a href="app-transaction-detail.html" class="item">
                     <div class="detail">
-                        <img src="<?php echo asset('img/sample/brand/2.jpg" alt="') ?>img" class="image-block imaged w48">
+                        <img src="{{ asset('img/sample/brand/2.jpg') }}" alt="img" class="image-block imaged w48">
                         <div>
                             <strong>Apple</strong>
                             <p>Appstore Purchase</p>
@@ -234,7 +234,7 @@
                 <!-- item -->
                 <a href="app-transaction-detail.html" class="item">
                     <div class="detail">
-                        <img src="<?php echo asset('img/sample/avatar/avatar3.jpg') ?>" alt="img" class="image-block imaged w48">
+                        <img src="{{ asset('img/sample/avatar/avatar3.jpg') }}" alt="img" class="image-block imaged w48">
                         <div>
                             <strong>Alex Ljung</strong>
                             <p>Transfer</p>
@@ -248,7 +248,7 @@
                 <!-- item -->
                 <a href="app-transaction-detail.html" class="item">
                     <div class="detail">
-                        <img src="<?php echo asset('img/sample/avatar/avatar4.jpg') ?>" alt="img" class="image-block imaged w48">
+                        <img src="{{ asset('img/sample/avatar/avatar4.jpg') }}" alt="img" class="image-block imaged w48">
                         <div>
                             <strong>Beatriz Brito</strong>
                             <p>Transfer</p>
@@ -276,7 +276,7 @@
                         <li class="splide__slide">
                             <a href="#">
                                 <div class="user-card">
-                                    <img src="<?php echo asset('img/sample/avatar/avatar2.jpg') ?>" alt="img" class="imaged w-100">
+                                    <img src="{{ asset('img/sample/avatar/avatar2.jpg') }}" alt="img" class="imaged w-100">
                                     <strong>Jurrien</strong>
                                 </div>
                             </a>
@@ -284,7 +284,7 @@
                         <li class="splide__slide">
                             <a href="#">
                                 <div class="user-card">
-                                    <img src="<?php echo asset('img/sample/avatar/avatar3.jpg') ?>" alt="img" class="imaged w-100">
+                                    <img src="{{ asset('img/sample/avatar/avatar3.jpg') }}" alt="img" class="imaged w-100">
                                     <strong>Elwin</strong>
                                 </div>
                             </a>
@@ -292,7 +292,7 @@
                         <li class="splide__slide">
                             <a href="#">
                                 <div class="user-card">
-                                    <img src="<?php echo asset('img/sample/avatar/avatar4.jpg') ?>" alt="img" class="imaged w-100">
+                                    <img src="{{ asset('img/sample/avatar/avatar4.jpg') }}" alt="img" class="imaged w-100">
                                     <strong>Alma</strong>
                                 </div>
                             </a>
@@ -300,7 +300,7 @@
                         <li class="splide__slide">
                             <a href="#">
                                 <div class="user-card">
-                                    <img src="<?php echo asset('img/sample/avatar/avatar5.jpg') ?>" alt="img" class="imaged w-100">
+                                    <img src="{{ asset('img/sample/avatar/avatar5.jpg') }}" alt="img" class="imaged w-100">
                                     <strong>Justine</strong>
                                 </div>
                             </a>
@@ -308,7 +308,7 @@
                         <li class="splide__slide">
                             <a href="#">
                                 <div class="user-card">
-                                    <img src="<?php echo asset('img/sample/avatar/avatar6.jpg') ?>" alt="img" class="imaged w-100">
+                                    <img src="{{ asset('img/sample/avatar/avatar6.jpg') }}" alt="img" class="imaged w-100">
                                     <strong>Maria</strong>
                                 </div>
                             </a>
@@ -316,7 +316,7 @@
                         <li class="splide__slide">
                             <a href="#">
                                 <div class="user-card">
-                                    <img src="<?php echo asset('img/sample/avatar/avatar7.jpg') ?>" alt="img" class="imaged w-100">
+                                    <img src="{{ asset('img/sample/avatar/avatar7.jpg') }}" alt="img" class="imaged w-100">
                                     <strong>Pamela</strong>
                                 </div>
                             </a>
@@ -324,7 +324,7 @@
                         <li class="splide__slide">
                             <a href="#">
                                 <div class="user-card">
-                                    <img src="<?php echo asset('img/sample/avatar/avatar8.jpg') ?>" alt="img" class="imaged w-100">
+                                    <img src="{{ asset('img/sample/avatar/avatar8.jpg') }}" alt="img" class="imaged w-100">
                                     <strong>Neville</strong>
                                 </div>
                             </a>
@@ -332,7 +332,7 @@
                         <li class="splide__slide">
                             <a href="#">
                                 <div class="user-card">
-                                    <img src="<?php echo asset('img/sample/avatar/avatar9.jpg') ?>" alt="img" class="imaged w-100">
+                                    <img src="{{ asset('img/sample/avatar/avatar9.jpg') }}" alt="img" class="imaged w-100">
                                     <strong>Alex</strong>
                                 </div>
                             </a>
@@ -340,7 +340,7 @@
                         <li class="splide__slide">
                             <a href="#">
                                 <div class="user-card">
-                                    <img src="<?php echo asset('img/sample/avatar/avatar10.jpg') ?>" alt="img" class="imaged w-100">
+                                    <img src="{{ asset('img/sample/avatar/avatar10.jpg') }}" alt="img" class="imaged w-100">
                                     <strong>Stina</strong>
                                 </div>
                             </a>
@@ -366,7 +366,7 @@
                         <li class="splide__slide">
                             <div class="bill-box">
                                 <div class="img-wrapper">
-                                    <img src="<?php echo asset('img/sample/brand/1.jpg') ?>" alt="img" class="image-block imaged w48">
+                                    <img src="{{ asset('img/sample/brand/1.jpg') }}" alt="img" class="image-block imaged w48">
                                 </div>
                                 <div class="price">$ 14</div>
                                 <p>Prime Monthly Subscription</p>
@@ -377,7 +377,7 @@
                         <li class="splide__slide">
                             <div class="bill-box">
                                 <div class="img-wrapper">
-                                    <img src="<?php echo asset('img/sample/brand/2.jpg') ?>" alt="img" class="image-block imaged w48">
+                                    <img src="{{ asset('img/sample/brand/2.jpg') }}" alt="img" class="image-block imaged w48">
                                 </div>
                                 <div class="price">$ 9</div>
                                 <p>Music Monthly Subscription</p>

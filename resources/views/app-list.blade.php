@@ -238,7 +238,7 @@
                     <li>
                         <a href="#" class="item">
                             <div class="icon-box">
-                                <img src="<?php echo asset('img/sample/avatar/avatar4.jpg') ?>" alt="image" class="imaged rounded w36">
+                                <img src="{{ asset('img/sample/avatar/avatar4.jpg') }}" alt="image" class="imaged rounded w36">
                             </div>
                             <div class="in">
                                 <div>
@@ -290,7 +290,7 @@
                     <li>
                         <a href="#" class="item">
                             <div class="icon-box">
-                                <img src="<?php echo asset('img/sample/avatar/avatar5.jpg') ?>" alt="image" class="imaged rounded w36">
+                                <img src="{{ asset('img/sample/avatar/avatar5.jpg') }}" alt="image" class="imaged rounded w36">
                             </div>
                             <div class="in">
                                 <div>
@@ -311,7 +311,7 @@
                     <li>
                         <a href="#" class="item">
                             <div class="icon-box">
-                                <img src="<?php echo asset('img/sample/avatar/avatar8.jpg') ?>" alt="image" class="imaged rounded w36">
+                                <img src="{{ asset('img/sample/avatar/avatar8.jpg') }}" alt="image" class="imaged rounded w36">
                             </div>
                             <div class="in">
                                 <div>

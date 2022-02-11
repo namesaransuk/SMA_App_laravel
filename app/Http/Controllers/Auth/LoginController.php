@@ -7,6 +7,8 @@ use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
 use Auth;
+use Session;
+
 
 class LoginController extends Controller
 {
@@ -46,11 +48,13 @@ class LoginController extends Controller
 
         $this->validate($request, [
             'email' => 'required|email',
-            'password' => 'required'
+            'password' => 'required',
+            // 'name' => 'required'
         ]);
 
         if (auth()->attempt(array('email' => $input['email'], 'password' => $input['password']))) {
             if (auth()->user()->is_admin == 1) {
+                // $user = $request->session()->get('data');
                 return redirect()->route('admin.home');
             } else {
                 return redirect()->route('login.profile');
@@ -58,11 +62,5 @@ class LoginController extends Controller
         } else {
             return redirect()->route('login')->with('error', 'Email and Password are wrong.');
         }
-    }
-
-    public function logout(Request $request)
-    {
-        Auth::logout();
-        return redirect('profile');
     }
 }

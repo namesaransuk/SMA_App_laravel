@@ -27,7 +27,7 @@
             </a>
         </div>
         <div class="pageTitle">
-            <img src="<?php echo asset('img/logo.png'); ?>" alt="logo" class="logo">
+            <img src="{{ asset('img/logo.png'); }}" alt="logo" class="logo">
         </div>
         <div class="right">
             <a href="/register">สมัครสมาชิก</a>
