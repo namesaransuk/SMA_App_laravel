@@ -26,11 +26,15 @@
                 <ion-icon name="chevron-back-outline"></ion-icon>
             </a>
         </div>
-        <div class="pageTitle">
+        <div class="pageTitle bg-primary text-center" style="border-radius: 50%; height:160px; width:250px; padding-top: 95px; margin-bottom: 75px">
             <img src="{{ asset('img/logo.png'); }}" alt="logo" class="logo">
         </div>
         <div class="right">
-            <a href="/register">สมัครสมาชิก</a>
+            @if (Request::is('login'))
+            <a class="" href="/register">สมัครสมาชิก</a>
+            @else (Request::is('register'))
+            <a class="" href="/login">เข้าสู่ระบบ</a>
+            @endif
         </div>
     </div>
     <!-- * App Header -->

@@ -6,13 +6,11 @@
                 <img src="{{ asset('img/sample/avatar/avatar1.jpg'); }}" alt="image" class="imaged  w36">
             </div>
             <div class="in">
-                @guest
-                @if (Session::get('email'))
+                @if (Auth::check())
                 <strong>{{ Auth::user()->name }}</strong>
                 @else
                 <strong></strong>
                 @endif
-                @endguest
                 <div class="text-muted">4029209</div>
             </div>
             <a href="#" class="btn btn-link btn-icon sidebar-close" data-bs-dismiss="modal">
