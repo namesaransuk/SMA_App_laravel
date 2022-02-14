@@ -24,18 +24,14 @@
     <!-- App Header -->
     <div class="appHeader bg-primary text-light">
         <div class="left">
-            @if (Auth::check())
             <a href="#" class="headerButton" data-bs-toggle="modal" data-bs-target="#sidebarPanel">
                 <ion-icon name="menu-outline"></ion-icon>
             </a>
-            @else
-            <a href="#" class="headerButton" data-bs-toggle="tooltip" title="เข้าสู่ระบบเพื่อใช้งานเมนูนี้">
-                <ion-icon name="menu-outline"></ion-icon>
-            </a>
-            @endif
         </div>
         <div class="pageTitle">
-            <img src="{{ asset('img/logo.png'); }}" alt="logo" class="logo">
+            <a href="/">
+                <img src="{{ asset('img/logo.png'); }}" alt="logo" class="logo">
+            </a>
         </div>
         <div class="right">
             <!-- <a href="app-notifications.html" class="headerButton">

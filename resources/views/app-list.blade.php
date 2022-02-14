@@ -29,7 +29,9 @@
             </a>
         </div>
         <div class="pageTitle">
-            รายการ
+            <a href="/">
+                <img src="{{ asset('img/logo.png'); }}" alt="logo" class="logo">
+            </a>
         </div>
         <div class="right">
         </div>

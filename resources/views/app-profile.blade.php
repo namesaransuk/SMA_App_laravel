@@ -60,25 +60,20 @@
             </div>
             <div class="button-section px-3 pt-3">
                 <div class="row">
-                    @guest
-                    @if (Route::has('login'))
+                    @if (Auth::check())
+                    <h3 class="text-white">{{ Auth::user()->name }}</h3>
+                    @else
                     <div class="col">
                         <a href="login" class="btn btn-block btn-success">
                             เข้าสู่ระบบ
                         </a>
                     </div>
-                    @endif
-
-                    @if (Route::has('register'))
                     <div class="col">
                         <a href="register" class="btn btn-block btn-secondary">
                             สมัครสมาชิก
                         </a>
                     </div>
                     @endif
-                    @else
-                    <h1 class="text-white">Welcome {{ Auth::user()->name }}</h1>
-                    @endguest
                 </div>
             </div>
         </div>
@@ -171,19 +166,19 @@
             </li>
         </ul>
 
+        <div class="section pt-2">
+            <a class="btn btn-danger btn-block" type="button" href="{{ route('logout') }}" onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                {{ __('ออกจากระบบ') }}
+            </a>
+
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                @csrf
+            </form>
+        </div>
+
     </div>
     <!-- * App Capsule -->
-
-    <div class="container">
-        <a class="btn btn-danger btn-block" type="button" href="{{ route('logout') }}" onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-            {{ __('ออกจากระบบ') }}
-        </a>
-
-        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-            @csrf
-        </form>
-    </div>
 
     <!-- App Bottom Menu -->
     @include ('assets/component/bottomComponent')

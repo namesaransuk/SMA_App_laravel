@@ -1,6 +1,6 @@
 <!-- App Bottom Menu -->
 <div class="appBottomMenu" id="appBottomMenu">
-    @if ($_SERVER['PHP_SELF'] == '/index.php')
+    @if (Request::is('/') || Request::is('index'))
     <a href="/" class="item active">
         <div class="col">
             <ion-icon name="home-outline"></ion-icon>
@@ -16,7 +16,7 @@
     </a>
     @endif
 
-    @if ($_SERVER['PHP_SELF'] == '/index.php/list')
+    @if (Request::is('list'))
     <a href="list" class="item active">
         <div class="col">
             <ion-icon name="list-outline"></ion-icon>
@@ -32,7 +32,7 @@
     </a>
     @endif
 
-    @if ($_SERVER['PHP_SELF'] == '/index.php/wallet')
+    @if (Request::is('wallet'))
     <a href="wallet" class="item">
         <div class="col">
             <div class="action-button large">
@@ -52,7 +52,7 @@
     </a>
     @endif
 
-    @if ($_SERVER['PHP_SELF'] == '/index.php/notifications')
+    @if (Request::is('notifications'))
     <a href="notifications" class="item active">
         <div class="col">
             <ion-icon name="notifications-outline"></ion-icon>
@@ -68,7 +68,7 @@
     </a>
     @endif
 
-    @if ($_SERVER['PHP_SELF'] == '/index.php/profile')
+    @if (Request::is('profile'))
     <a href="profile" class="item active">
         <div class="col">
             <ion-icon name="person-outline"></ion-icon>

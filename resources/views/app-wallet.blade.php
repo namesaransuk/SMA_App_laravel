@@ -23,13 +23,15 @@
 
     <!-- App Header -->
     <div class="appHeader bg-primary text-light">
-    <div class="left">
+        <div class="left">
             <a href="#" class="headerButton" data-bs-toggle="modal" data-bs-target="#sidebarPanel">
                 <ion-icon name="menu-outline"></ion-icon>
             </a>
         </div>
         <div class="pageTitle">
-            Wallet
+            <a href="/">
+                <img src="{{ asset('img/logo.png'); }}" alt="logo" class="logo">
+            </a>
         </div>
         <div class="right">
             <!-- <a href="app-notifications.html" class="headerButton">

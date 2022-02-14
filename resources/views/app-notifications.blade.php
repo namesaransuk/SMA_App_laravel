@@ -3,8 +3,7 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="theme-color" content="#000000">
@@ -23,17 +22,19 @@
     <!-- * loader -->
 
     <!-- App Header -->
-    <div class="appHeader">
+    <div class="appHeader bg-primary">
         <div class="left">
             <!-- <a href="#" class="headerButton goBack">
                 <ion-icon name="chevron-back-outline"></ion-icon>
             </a> -->
         </div>
         <div class="pageTitle">
-            การแจ้งเตือน
+            <a href="/">
+                <img src="{{ asset('img/logo.png'); }}" alt="logo" class="logo">
+            </a>
         </div>
         <div class="right">
-            <a href="#" class="headerButton" onclick="toastbox('toast-example-1', 3000)">
+            <a href="#" class="headerButton text-white" onclick="toastbox('toast-example-1', 3000)">
                 <ion-icon name="notifications-off-outline"></ion-icon>
             </a>
         </div>

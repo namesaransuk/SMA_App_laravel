@@ -1,3 +1,4 @@
+@if (Auth::check())
 <div class="modal-content">
     <div class="modal-body p-0">
         <!-- profile box -->
@@ -26,43 +27,6 @@
             </div>
         </div>
         <!-- * balance -->
-
-        <!-- action group -->
-        <!-- <div class="action-group">
-                    <a href="index.html" class="action-button">
-                        <div class="in">
-                            <div class="iconbox">
-                                <ion-icon name="add-outline"></ion-icon>
-                            </div>
-                            ฝาก
-                        </div>
-                    </a>
-                    <a href="index.html" class="action-button">
-                        <div class="in">
-                            <div class="iconbox">
-                                <ion-icon name="arrow-down-outline"></ion-icon>
-                            </div>
-                            ถอน
-                        </div>
-                    </a>
-                    <a href="index.html" class="action-button">
-                        <div class="in">
-                            <div class="iconbox">
-                                <ion-icon name="arrow-forward-outline"></ion-icon>
-                            </div>
-                            โอน
-                        </div>
-                    </a>
-                    <a href="app-cards.html" class="action-button">
-                        <div class="in">
-                            <div class="iconbox">
-                                <ion-icon name="card-outline"></ion-icon>
-                            </div>
-                            แลกเปลี่ยน
-                        </div>
-                    </a>
-                </div> -->
-        <!-- * action group -->
 
         <!-- menu -->
         <div class="listview-title mt-1">Menu</div>
@@ -154,35 +118,18 @@
         </ul>
         <!-- * others -->
 
-        <!-- send money -->
-        <!-- <div class="listview-title mt-1">Send Money</div>
-                <ul class="listview image-listview flush transparent no-line">
-                    <li>
-                        <a href="#" class="item">
-                            <img src="assets/img/sample/avatar/avatar2.jpg" alt="image" class="image">
-                            <div class="in">
-                                <div>Artem Sazonov</div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="item">
-                            <img src="assets/img/sample/avatar/avatar4.jpg" alt="image" class="image">
-                            <div class="in">
-                                <div>Sophie Asveld</div>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="item">
-                            <img src="assets/img/sample/avatar/avatar3.jpg" alt="image" class="image">
-                            <div class="in">
-                                <div>Kobus van de Vegte</div>
-                            </div>
-                        </a>
-                    </li>
-                </ul> -->
-        <!-- * send money -->
-
     </div>
 </div>
+@else
+<div class="modal-content">
+    <div class="modal-body">
+        <div class="jumbotron d-flex align-items-center min-vh-100">
+            <div class="container text-center">
+                <h2>กรุณาเข้าสู่ระบบ</h2>
+                <h4>SMA Coin Wallet</h4>
+                <a class="btn btn-primary" type="button" href="login">เข้าสู่ระบบ</a>
+            </div>
+        </div>
+    </div>
+</div>
+@endif
