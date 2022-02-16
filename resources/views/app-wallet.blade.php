@@ -43,9 +43,9 @@
     <!-- * App Header -->
 
 
+    @if (Auth::check())
     <!-- App Capsule -->
     <div id="appCapsule">
-
 
         <!-- Wallet -->
         <div class="section full gradientSection">
@@ -434,60 +434,6 @@
                 </div>
             </div>
 
-            <!-- carousel multiple -->
-            <!-- <div class="carousel-multiple splide">
-                <div class="splide__track">
-                    <ul class="splide__list">
-
-                        <li class="splide__slide">
-                            <a href="app-blog-post.html">
-                                <div class="blog-card">
-                                    <img src="assets/img/sample/photo/1.jpg" alt="image" class="imaged w-100">
-                                    <div class="text">
-                                        <h4 class="title">What will be the value of bitcoin in the next...</h4>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-
-                        <li class="splide__slide">
-                            <a href="app-blog-post.html">
-                                <div class="blog-card">
-                                    <img src="assets/img/sample/photo/2.jpg" alt="image" class="imaged w-100">
-                                    <div class="text">
-                                        <h4 class="title">Rules you need to know in business</h4>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-
-                        <li class="splide__slide">
-                            <a href="app-blog-post.html">
-                                <div class="blog-card">
-                                    <img src="assets/img/sample/photo/3.jpg" alt="image" class="imaged w-100">
-                                    <div class="text">
-                                        <h4 class="title">10 easy ways to save your money</h4>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-
-                        <li class="splide__slide">
-                            <a href="app-blog-post.html">
-                                <div class="blog-card">
-                                    <img src="assets/img/sample/photo/4.jpg" alt="image" class="imaged w-100">
-                                    <div class="text">
-                                        <h4 class="title">Follow the financial agenda with...</h4>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-
-                    </ul>
-                </div>
-            </div> -->
-            <!-- * carousel multiple -->
-
         </div>
         <!-- * News -->
 
@@ -510,7 +456,39 @@
 
     </div>
     <!-- * App Capsule -->
+    @else
+    <!-- App Capsule -->
+    <div id="appCapsule">
 
+        <!-- Wallet -->
+        <div class="section full gradientSection">
+            <div class="in">
+                <div class="my-5 py-4">
+                    <h1 class="text-white">กรุณาเข้าสู่ระบบ</h1>
+                    <p class="text-white">เพื่อใช้งาน SMA Coin Wallet</p>
+                </div>
+            </div>
+        </div>
+        <!-- * Wallet -->
+
+    </div>
+    <!-- * App Capsule -->
+
+    <div class="fixed-bottom pb-5 mb-5">
+        <div class="row text-center">
+            <div class="col">
+                <a type="button" href="login" class="btn btn-lg w-75 btn-primary">
+                    เข้าสู่ระบบ
+                </a>
+            </div>
+            <div class="col">
+                <a type="button" href="register" class="btn btn-lg w-75 btn-primary">
+                    สมัครสมาชิก
+                </a>
+            </div>
+        </div>
+    </div>
+    @endif
 
     <!-- App Bottom Menu -->
     @include ('assets/component/bottomComponent')

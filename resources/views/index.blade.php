@@ -45,6 +45,8 @@
     </div>
     <!-- * App Header -->
 
+    <!-- ==================================== not login ==================================== -->
+    @if (Auth::check())
     <!-- App Capsule -->
     <div id="appCapsule">
 
@@ -432,6 +434,111 @@
 
     </div>
     <!-- * App Capsule -->
+
+    <!-- ==================================== not login ==================================== -->
+    @else
+    <!-- App Capsule -->
+    <div id="appCapsule">
+
+        <!-- Wallet Card -->
+        <div class="section wallet-card-section pt-1">
+            <div class="wallet-card">
+                <!-- Balance -->
+                <div class="text-center">
+                    <div class="p-5">
+                        <h3 class="">กรุณาเข้าสู่ระบบเพื่อแสดงยอดเงิน</h3>
+                        <a href="login" type="button" class="btn btn-primary">เข้าสู่ระบบ</a>
+                    </div>
+                </div>
+                <!-- * Balance -->
+                <!-- Wallet Footer -->
+                <div class="wallet-footer">
+                    <div class="item">
+                        <a href="#" data-bs-toggle="tooltip" title="กรุณาเข้าสู่ระบบเพื่อทำรายการ" data-bs-target="#depositActionSheet">
+                            <div class="icon-wrapper bg-danger">
+                                <ion-icon name="arrow-up-outline"></ion-icon>
+                            </div>
+                            <strong>ฝาก</strong>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#" data-bs-toggle="tooltip" title="กรุณาเข้าสู่ระบบเพื่อทำรายการ" data-bs-target="#withdrawActionSheet">
+                            <div class="icon-wrapper">
+                                <ion-icon name="arrow-down-outline"></ion-icon>
+                            </div>
+                            <strong>ถอน</strong>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="app-cards.html" data-bs-toggle="tooltip" title="กรุณาเข้าสู่ระบบเพื่อทำรายการ" data-bs-target="#sendActionSheet">
+                            <div class="icon-wrapper bg-success">
+                                <ion-icon name="arrow-forward-outline"></ion-icon>
+                            </div>
+                            <strong>โอน</strong>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="#" data-bs-toggle="tooltip" title="กรุณาเข้าสู่ระบบเพื่อทำรายการ" data-bs-target="#exchangeActionSheet">
+                            <div class="icon-wrapper bg-warning">
+                                <ion-icon name="swap-vertical"></ion-icon>
+                            </div>
+                            <strong>แลกเปลี่ยน</strong>
+                        </a>
+                    </div>
+
+                </div>
+                <!-- * Wallet Footer -->
+            </div>
+        </div>
+        <!-- Wallet Card -->
+
+        <!-- Stats -->
+        <div class="section">
+            <div class="row mt-2">
+                <div class="col-6">
+                    <div class="stat-box">
+                        <div class="title">เงินโอนเข้า</div>
+                        <div class="value text-success">$ ----.--</div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="stat-box">
+                        <div class="title">โอนเงินออก</div>
+                        <div class="value text-danger">$ ----.--</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- * Stats -->
+
+        <!-- Transactions -->
+        <div class="section mt-4">
+            <div class="section-heading">
+                <h2 class="title">ประวัติการเงิน</h2>
+            </div>
+            <div class="transactions">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <img class="pt-3 w-25" src="{{ asset('img/no-money.png') }}" alt="">
+                        <p class="pt-3">ไม่มีประวัติการทำรายการ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- * Transactions -->
+
+        <!-- app footer -->
+        <div class="appFooter mt-3">
+            <div class="footer-title">
+                Copyright © Finapp 2021. All Rights Reserved.
+            </div>
+            Bootstrap 5 based mobile template.
+        </div>
+        <!-- * app footer -->
+
+    </div>
+    <!-- * App Capsule -->
+    @endif
 
 
     <!-- App Bottom Menu -->

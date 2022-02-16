@@ -53,6 +53,7 @@
     </div>
     <!-- * toast bottom iconed -->
 
+    @if (Auth::check())
     <!-- App Capsule -->
     <div id="appCapsule">
 
@@ -179,7 +180,23 @@
 
     </div>
     <!-- * App Capsule -->
+    @else
+    <!-- Not Login App Capsule -->
 
+        <div class="section full d-flex align-items-center min-vh-100">
+            <div class="col text-center">
+                <img src="{{ asset('img/notification.png') }}" class="w-25" alt="">
+                <h2 class="pt-3">กรุณาเข้าสู่ระบบ</h2>
+                <p>เพื่อดูการแจ้งเตือน</p>
+                <div class="col">
+                    <a type="button" href="login" class="btn btn-primary">เข้าสู่ระบบ</a>
+                    <a type="button" href="register" class="btn btn-primary">สมัครสมาชิก</a>
+                </div>
+            </div>
+        </div>
+
+    <!-- * Not Login App Capsule -->
+    @endif
 
     <!-- App Bottom Menu -->
     @include ('assets/component/bottomComponent')
