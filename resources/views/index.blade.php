@@ -45,7 +45,7 @@
     </div>
     <!-- * App Header -->
 
-    <!-- ==================================== not login ==================================== -->
+    <!-- ==================================== login ==================================== -->
     @if (Auth::check())
     <!-- App Capsule -->
     <div id="appCapsule">
@@ -267,162 +267,6 @@
         </div>
         <!-- * Transactions -->
 
-        <!-- Send Money -->
-        <div class="section full mt-4">
-            <div class="section-heading padding">
-                <h2 class="title">Send Money</h2>
-                <a href="#" class="link">Add New</a>
-            </div>
-            <!-- carousel small -->
-            <div class="carousel-small splide">
-                <div class="splide__track">
-                    <ul class="splide__list">
-                        <li class="splide__slide">
-                            <a href="#">
-                                <div class="user-card">
-                                    <img src="{{ asset('img/sample/avatar/avatar2.jpg') }}" alt="img" class="imaged w-100">
-                                    <strong>Jurrien</strong>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="splide__slide">
-                            <a href="#">
-                                <div class="user-card">
-                                    <img src="{{ asset('img/sample/avatar/avatar3.jpg') }}" alt="img" class="imaged w-100">
-                                    <strong>Elwin</strong>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="splide__slide">
-                            <a href="#">
-                                <div class="user-card">
-                                    <img src="{{ asset('img/sample/avatar/avatar4.jpg') }}" alt="img" class="imaged w-100">
-                                    <strong>Alma</strong>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="splide__slide">
-                            <a href="#">
-                                <div class="user-card">
-                                    <img src="{{ asset('img/sample/avatar/avatar5.jpg') }}" alt="img" class="imaged w-100">
-                                    <strong>Justine</strong>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="splide__slide">
-                            <a href="#">
-                                <div class="user-card">
-                                    <img src="{{ asset('img/sample/avatar/avatar6.jpg') }}" alt="img" class="imaged w-100">
-                                    <strong>Maria</strong>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="splide__slide">
-                            <a href="#">
-                                <div class="user-card">
-                                    <img src="{{ asset('img/sample/avatar/avatar7.jpg') }}" alt="img" class="imaged w-100">
-                                    <strong>Pamela</strong>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="splide__slide">
-                            <a href="#">
-                                <div class="user-card">
-                                    <img src="{{ asset('img/sample/avatar/avatar8.jpg') }}" alt="img" class="imaged w-100">
-                                    <strong>Neville</strong>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="splide__slide">
-                            <a href="#">
-                                <div class="user-card">
-                                    <img src="{{ asset('img/sample/avatar/avatar9.jpg') }}" alt="img" class="imaged w-100">
-                                    <strong>Alex</strong>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="splide__slide">
-                            <a href="#">
-                                <div class="user-card">
-                                    <img src="{{ asset('img/sample/avatar/avatar10.jpg') }}" alt="img" class="imaged w-100">
-                                    <strong>Stina</strong>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!-- * carousel small -->
-        </div>
-        <!-- * Send Money -->
-
-        <!-- Monthly Bills -->
-        <div class="section full mt-4">
-            <div class="section-heading padding">
-                <h2 class="title">Monthly Bills</h2>
-                <a href="app-bills.html" class="link">View All</a>
-            </div>
-            <!-- carousel multiple -->
-            <div class="carousel-multiple splide">
-                <div class="splide__track">
-                    <ul class="splide__list">
-
-                        <li class="splide__slide">
-                            <div class="bill-box">
-                                <div class="img-wrapper">
-                                    <img src="{{ asset('img/sample/brand/1.jpg') }}" alt="img" class="image-block imaged w48">
-                                </div>
-                                <div class="price">$ 14</div>
-                                <p>Prime Monthly Subscription</p>
-                                <a href="#" class="btn btn-primary btn-block btn-sm">PAY NOW</a>
-                            </div>
-                        </li>
-
-                        <li class="splide__slide">
-                            <div class="bill-box">
-                                <div class="img-wrapper">
-                                    <img src="{{ asset('img/sample/brand/2.jpg') }}" alt="img" class="image-block imaged w48">
-                                </div>
-                                <div class="price">$ 9</div>
-                                <p>Music Monthly Subscription</p>
-                                <a href="#" class="btn btn-primary btn-block btn-sm">PAY NOW</a>
-                            </div>
-                        </li>
-
-                        <li class="splide__slide">
-                            <div class="bill-box">
-                                <div class="img-wrapper">
-                                    <div class="iconbox bg-danger">
-                                        <ion-icon name="medkit-outline"></ion-icon>
-                                    </div>
-                                </div>
-                                <div class="price">$ 299</div>
-                                <p>Monthly Health Insurance</p>
-                                <a href="#" class="btn btn-primary btn-block btn-sm">PAY NOW</a>
-                            </div>
-                        </li>
-
-                        <li class="splide__slide">
-                            <div class="bill-box">
-                                <div class="img-wrapper">
-                                    <div class="iconbox">
-                                        <ion-icon name="card-outline"></ion-icon>
-                                    </div>
-                                </div>
-                                <div class="price">$ 962</div>
-                                <p>Credit Card Statement
-                                </p>
-                                <a href="#" class="btn btn-primary btn-block btn-sm">PAY NOW</a>
-                            </div>
-                        </li>
-
-                    </ul>
-                </div>
-            </div>
-            <!-- * carousel multiple -->
-        </div>
-        <!-- * Monthly Bills -->
-
         <!-- app footer -->
         <div class="appFooter mt-3">
             <div class="footer-title">
@@ -470,7 +314,7 @@
                         </a>
                     </div>
                     <div class="item">
-                        <a href="app-cards.html" data-bs-toggle="tooltip" title="กรุณาเข้าสู่ระบบเพื่อทำรายการ" data-bs-target="#sendActionSheet">
+                        <a href="#" data-bs-toggle="tooltip" title="กรุณาเข้าสู่ระบบเพื่อทำรายการ" data-bs-target="#sendActionSheet">
                             <div class="icon-wrapper bg-success">
                                 <ion-icon name="arrow-forward-outline"></ion-icon>
                             </div>
@@ -498,13 +342,13 @@
                 <div class="col-6">
                     <div class="stat-box">
                         <div class="title">เงินโอนเข้า</div>
-                        <div class="value text-success">$ ----.--</div>
+                        <div class="value text-success">$ ---.--</div>
                     </div>
                 </div>
                 <div class="col-6">
                     <div class="stat-box">
                         <div class="title">โอนเงินออก</div>
-                        <div class="value text-danger">$ ----.--</div>
+                        <div class="value text-danger">$ ---.--</div>
                     </div>
                 </div>
             </div>

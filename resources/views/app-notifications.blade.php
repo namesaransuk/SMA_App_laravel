@@ -34,13 +34,16 @@
             </a>
         </div>
         <div class="right">
+            @if (Auth::check())
             <a href="#" class="headerButton text-white" onclick="toastbox('toast-example-1', 3000)">
                 <ion-icon name="notifications-off-outline"></ion-icon>
             </a>
+            @endif
         </div>
     </div>
     <!-- * App Header -->
 
+    @if (Auth::check())
     <!-- toast bottom iconed -->
     <div id="toast-example-1" class="toast-box toast-bottom bg-primary">
         <div class="in">
@@ -53,7 +56,6 @@
     </div>
     <!-- * toast bottom iconed -->
 
-    @if (Auth::check())
     <!-- App Capsule -->
     <div id="appCapsule">
 
@@ -183,18 +185,28 @@
     @else
     <!-- Not Login App Capsule -->
 
-        <div class="section full d-flex align-items-center min-vh-100">
-            <div class="col text-center">
-                <img src="{{ asset('img/notification.png') }}" class="w-25" alt="">
-                <h2 class="pt-3">กรุณาเข้าสู่ระบบ</h2>
-                <p>เพื่อดูการแจ้งเตือน</p>
-                <div class="col">
-                    <a type="button" href="login" class="btn btn-primary">เข้าสู่ระบบ</a>
-                    <a type="button" href="register" class="btn btn-primary">สมัครสมาชิก</a>
-                </div>
+    <div class="section full d-flex align-items-center min-vh-100">
+        <div class="col text-center">
+            <img src="{{ asset('img/notification.png') }}" class="w-25" alt="">
+            <h2 class="pt-3">กรุณาเข้าสู่ระบบ</h2>
+            <p>เพื่อดูการแจ้งเตือน</p>
+        </div>
+    </div>
+
+    <div class="fixed-bottom pb-5 mb-5">
+        <div class="row text-center">
+            <div class="col">
+                <a type="button" href="login" class="btn btn-lg w-75 btn-primary">
+                    เข้าสู่ระบบ
+                </a>
+            </div>
+            <div class="col">
+                <a type="button" href="register" class="btn btn-lg w-75 btn-primary">
+                    สมัครสมาชิก
+                </a>
             </div>
         </div>
-
+    </div>
     <!-- * Not Login App Capsule -->
     @endif
 

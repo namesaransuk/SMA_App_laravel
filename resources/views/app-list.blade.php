@@ -44,150 +44,176 @@
         <!-- Coin Status -->
         <div class="section full gradientSection">
             <div class="in coin-head">
-                <h1 class="total">$ 32,517.50</h1>
-                <h4 class="caption">
+                <h1 class="total pt-3 mt-3">สินค้าและบริการแนะนำ</h1>
+                <!-- <h4 class="caption">
                     <span class="iconbox text-success">
                         <ion-icon name="caret-up"></ion-icon>
                     </span>
                     $2,325.19 <strong>(+1.50%)</strong>
-                </h4>
+                </h4> -->
             </div>
         </div>
         <!-- * Coin Status -->
 
+        <!-- Order Recommend -->
+        <div class="section full mt-4">
+            <div class="section-heading padding">
+                <h2 class="title">บริการแนะนำ</h2>
+            </div>
+            <!-- carousel multiple -->
+            <div class="carousel-multiple splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
 
-        <!-- Coin Chart -->
-        <div class="section mb-2">
+                        <li class="splide__slide">
+                            <div class="bill-box">
+                                <div class="img-wrapper py-1">
+                                    <img src="https://khaydi.com/public/uploads/all/DCEVUnZYT9g59mjNRSCguoy63gUewgFa0J7BwJNb.png" alt="img" class="image-block imaged w-75">
+                                </div>
+                                <h4 class="">KHAYDI</h4>
+                                <p>ซื้อขายสินค้า เลือกช็อปได้ที่นี่</p>
+                                <a href="https://khaydi.com/" target="_blank" class="btn btn-primary btn-block btn-sm">เข้าสู่เว็บไซต์</a>
+                            </div>
+                        </li>
 
-            <div class="card coin-chart">
-                <div class="card-body pt-1">
-                    <!-- tabs -->
-                    <ul class="nav nav-tabs lined" role="tablist">
-                        <li class="nav-item">
-                            <a class="nav-link active" data-bs-toggle="tab" href="#tab-24h" role="tab">
-                                24H
+                        <li class="splide__slide">
+                            <div class="bill-box">
+                                <div class="img-wrapper">
+                                    <img src="https://r.mobirisesite.com/180778/assets/images/drop-point-2-500x500.png?v=1NcEht" alt="img" class="image-block imaged w-75">
+                                </div>
+                                <h4 class="">SMA DROPPOINT</h4>
+                                <p>บริการฝากส่งพัดดุในเรทอัตราที่ถูกมาก เข้ารับของถึงที่ หรือนำของมาส่งกับเรา</p>
+                                <a href="https://www.smacorporation.com/sendpack" target="_blank" class="btn btn-primary btn-block btn-sm">เข้าสู่เว็บไซต์</a>
+                            </div>
+                        </li>
+
+                        <li class="splide__slide">
+                            <div class="bill-box">
+                                <div class="img-wrapper py-1">
+                                    <img src="https://smadropship.com/assets/uploads/logos/sma2.png" alt="img" class="image-block imaged w-100">
+                                </div>
+                                <h4 class="">SMA DROPSHIP</h4>
+                                <p>ตัวแทนทำดรอปชิป DROPSHIP ผ่านระบบ SMADROPSHIP เชื่อมต่อง่าย & เผยแพร่สินค้าไปยัง LAZADA & SHOPEE</p>
+                                <a href="https://smadropship.com/" class="btn btn-primary btn-block btn-sm">เข้าสู่เว็บไซต์</a>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <!-- * carousel multiple -->
+        </div>
+        <!-- * Order Recommend -->
+
+        <!-- Send Money -->
+        <div class="section full mt-4">
+            <div class="section-heading padding">
+                <h2 class="title">สินค้าแนะนำ</h2>
+            </div>
+            <!-- carousel small -->
+            <div class="carousel-small splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <a href="#">
+                                <div class="user-card">
+                                    <img src="{{ asset('img/sample/avatar/avatar2.jpg') }}" alt="img" class="imaged w-100">
+                                    <strong>Jurrien</strong>
+                                </div>
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#tab-1w" role="tab">
-                                1W
+                        <li class="splide__slide">
+                            <a href="#">
+                                <div class="user-card">
+                                    <img src="{{ asset('img/sample/avatar/avatar3.jpg') }}" alt="img" class="imaged w-100">
+                                    <strong>Elwin</strong>
+                                </div>
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#tab-1m" role="tab">
-                                1M
+                        <li class="splide__slide">
+                            <a href="#">
+                                <div class="user-card">
+                                    <img src="{{ asset('img/sample/avatar/avatar4.jpg') }}" alt="img" class="imaged w-100">
+                                    <strong>Alma</strong>
+                                </div>
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#tab-1y" role="tab">
-                                1Y
+                        <li class="splide__slide">
+                            <a href="#">
+                                <div class="user-card">
+                                    <img src="{{ asset('img/sample/avatar/avatar5.jpg') }}" alt="img" class="imaged w-100">
+                                    <strong>Justine</strong>
+                                </div>
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-bs-toggle="tab" href="#tab-all" role="tab">
-                                All
+                        <li class="splide__slide">
+                            <a href="#">
+                                <div class="user-card">
+                                    <img src="{{ asset('img/sample/avatar/avatar6.jpg') }}" alt="img" class="imaged w-100">
+                                    <strong>Maria</strong>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="splide__slide">
+                            <a href="#">
+                                <div class="user-card">
+                                    <img src="{{ asset('img/sample/avatar/avatar7.jpg') }}" alt="img" class="imaged w-100">
+                                    <strong>Pamela</strong>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="splide__slide">
+                            <a href="#">
+                                <div class="user-card">
+                                    <img src="{{ asset('img/sample/avatar/avatar8.jpg') }}" alt="img" class="imaged w-100">
+                                    <strong>Neville</strong>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="splide__slide">
+                            <a href="#">
+                                <div class="user-card">
+                                    <img src="{{ asset('img/sample/avatar/avatar9.jpg') }}" alt="img" class="imaged w-100">
+                                    <strong>Alex</strong>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="splide__slide">
+                            <a href="#">
+                                <div class="user-card">
+                                    <img src="{{ asset('img/sample/avatar/avatar10.jpg') }}" alt="img" class="imaged w-100">
+                                    <strong>Stina</strong>
+                                </div>
                             </a>
                         </li>
                     </ul>
-                    <!-- * tabs -->
-                </div>
-
-
-                <!-- tab content -->
-                <div class="tab-content">
-
-                    <div class="tab-pane fade show active" id="tab-24h" role="tabpanel">
-                        <div class="chart-example-1"></div>
-                    </div>
-
-                    <div class="tab-pane fade" id="tab-1w" role="tabpanel">
-                        <div class="chart-example-2"></div>
-                    </div>
-                    <div class="tab-pane fade" id="tab-1m" role="tabpanel">
-                        <div class="chart-example-3"></div>
-                    </div>
-                    <div class="tab-pane fade" id="tab-1y" role="tabpanel">
-                        <div class="chart-example-4"></div>
-                    </div>
-                    <div class="tab-pane fade" id="tab-all" role="tabpanel">
-                        <div class="chart-example-5"></div>
-                    </div>
-                </div>
-                <!-- * tab content -->
-
-            </div>
-        </div>
-        <!-- Coin Chart -->
-
-
-        <!-- Buttons -->
-        <div class="section">
-            <div class="card">
-                <div class="card-body">
-                    <div class="row">
-                        <div class="col">
-                            <a href="crypto-exchange.html" class="btn btn-block btn-lg btn-success">BUY</a>
-                        </div>
-                        <div class="col">
-                            <a href="crypto-exchange.html" class="btn btn-block btn-lg btn-secondary">SELL</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <!-- Buttons -->
-
-        <!-- Stats -->
-        <div class="section mt-2 mb-4">
-            <div class="card">
-                <ul class="listview no-line transparent flush simple-listview">
-                    <li>
-                        <div class="text-muted">Daily Change</div>
-                        <strong class="text-success">+5.10%</strong>
-                    </li>
-                    <li>
-                        <div class="text-muted">High Price</div>
-                        <strong>$56,367.23</strong>
-                    </li>
-                    <li>
-                        <div class="text-muted">Low Price</div>
-                        <strong>$18,529.90</strong>
-                    </li>
-                    <li>
-                        <div class="text-muted">Market Supply</div>
-                        <strong>BTC 14.62M</strong>
-                    </li>
-                    <li>
-                        <div class="text-muted">Market Cap</div>
-                        <strong>$526.48B</strong>
-                    </li>
-                </ul>
-            </div>
-            <div class="card mt-2">
-                <div class="card-body">
-                    <div class="row mb-05 fontsize-sub">
-                        <div class="col text-success"><strong>72% Buy</strong></div>
-                        <div class="col text-secondary text-end"><strong>26% Sell</strong></div>
-                    </div>
-                    <div class="progress">
-                        <div class="progress-bar bg-success" role="progressbar" style="width: 72%" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"></div>
-                        <div class="progress-bar bg-secondary" role="progressbar" style="width: 28%" aria-valuenow="28" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
                 </div>
             </div>
+            <!-- * carousel small -->
         </div>
-        <!-- Stats -->
-
-        <div class="section mt-3 mb-3">
-            <a href="#" class="btn btn-lg btn-block btn-primary">Load More</a>
-        </div>
-
+        <!-- * Send Money -->
 
     </div>
     <!-- * App Capsule -->
 
-
+    @if (Auth::check())
+    <div class=""></div>
+    @else
+    <div class="fixed-bottom pb-5 mb-5">
+        <div class="row text-center">
+            <div class="col">
+                <a type="button" href="login" class="btn btn-lg w-75 btn-primary">
+                    เข้าสู่ระบบ
+                </a>
+            </div>
+            <div class="col">
+                <a type="button" href="register" class="btn btn-lg w-75 btn-primary">
+                    สมัครสมาชิก
+                </a>
+            </div>
+        </div>
+    </div>
+    @endif
 
     <!-- App Bottom Menu -->
     @include ('assets/component/bottomComponent')
@@ -208,121 +234,6 @@
 
     <!-- ========= JS Files =========  -->
     @include ('assets/component/link-script')
-
-    <script>
-        var chartExample1 = {
-            series: [{
-                data: [512, 405, 666, 1090, 1309, 1400, 1500, 700, 1600, 1400, 1600, 2000, 1100, 501, 3000, 1000, 2000]
-            }],
-            chart: {
-                type: 'area',
-                width: '100%',
-                height: 140,
-                sparkline: {
-                    enabled: true
-                }
-            },
-            stroke: {
-                width: 2,
-            },
-            colors: ['#1DCC70'],
-            tooltip: {
-                enabled: false
-            }
-        };
-
-        var chartExample2 = {
-            series: [{
-                data: [512, 405, 666, 1090, 1309, 1400, 1500, 700, 1700, 1600, 1400, 1600]
-            }],
-            chart: {
-                type: 'area',
-                width: '100%',
-                height: 140,
-                sparkline: {
-                    enabled: true
-                }
-            },
-            stroke: {
-                width: 2,
-            },
-            colors: ['#1DCC70'],
-            tooltip: {
-                enabled: false
-            }
-        };
-
-        var chartExample3 = {
-            series: [{
-                data: [512, 405, 666, 1090, 1309, 1400, 1500, 700, 405, 666, 1090, 1309, 1400, 1500]
-            }],
-            chart: {
-                type: 'area',
-                width: '100%',
-                height: 140,
-                sparkline: {
-                    enabled: true
-                }
-            },
-            stroke: {
-                width: 2,
-            },
-            colors: ['#1DCC70'],
-            tooltip: {
-                enabled: false
-            }
-        };
-
-        var chartExample4 = {
-            series: [{
-                data: [512, 405, 666, 1090, 1309, 1400, 1500, 700, 1000, 2000, 512, 405, 666, 1090, 1309, 1400, 1500]
-            }],
-            chart: {
-                type: 'area',
-                width: '100%',
-                height: 140,
-                sparkline: {
-                    enabled: true
-                }
-            },
-            stroke: {
-                width: 2,
-            },
-            colors: ['#1DCC70'],
-            tooltip: {
-                enabled: false
-            }
-        };
-
-        var chartExample5 = {
-            series: [{
-                data: [512, 405, 666, 1090, 1309, 1400, 1309, 1400, 1500]
-            }],
-            chart: {
-                type: 'area',
-                width: '100%',
-                height: 140,
-                sparkline: {
-                    enabled: true
-                }
-            },
-            stroke: {
-                width: 2,
-            },
-            colors: ['#1DCC70'],
-            tooltip: {
-                enabled: false
-            }
-        };
-
-        document.addEventListener('DOMContentLoaded', function() {
-            document.querySelectorAll('.chart-example-1').forEach(chart => new ApexCharts(chart, chartExample1).render());
-            document.querySelectorAll('.chart-example-2').forEach(chart => new ApexCharts(chart, chartExample2).render());
-            document.querySelectorAll('.chart-example-3').forEach(chart => new ApexCharts(chart, chartExample3).render());
-            document.querySelectorAll('.chart-example-4').forEach(chart => new ApexCharts(chart, chartExample4).render());
-            document.querySelectorAll('.chart-example-5').forEach(chart => new ApexCharts(chart, chartExample5).render());
-        })
-    </script>
 
 </body>
 

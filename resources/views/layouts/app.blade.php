@@ -26,7 +26,7 @@
                 <ion-icon name="chevron-back-outline"></ion-icon>
             </a>
         </div>
-        <div class="pageTitle bg-primary text-center" style="border-radius: 50%;height: 160px;width: 250px;padding-top: 95px;margin-bottom: 75px">
+        <div class="pageTitle bg-primary text-center" style="border-radius: 50%; height: 160px; width: 250px; padding-top: 95px; margin-bottom: 75px">
             <a href="/">
                 <img src="{{ asset('img/logo.png'); }}" alt="logo" class="logo z-10">
             </a>
