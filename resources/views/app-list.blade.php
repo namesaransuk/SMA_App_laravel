@@ -41,10 +41,10 @@
     <!-- App Capsule -->
     <div id="appCapsule">
 
-        <!-- Coin Status -->
+        <!-- title header -->
         <div class="section full gradientSection">
             <div class="in coin-head">
-                <h1 class="total pt-3 mt-3">สินค้าและบริการแนะนำ</h1>
+                <h1 class="total pt-5 mt-5">สินค้าและบริการแนะนำ</h1>
                 <!-- <h4 class="caption">
                     <span class="iconbox text-success">
                         <ion-icon name="caret-up"></ion-icon>
@@ -53,7 +53,23 @@
                 </h4> -->
             </div>
         </div>
-        <!-- * Coin Status -->
+        <!-- * title header -->
+
+        <!-- carousel -->
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="{{ asset('img/carousel1.jpg') }}" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="{{ asset('img/carousel2.jpg') }}" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="{{ asset('img/carousel3.jpg') }}" class="d-block w-100" alt="...">
+                </div>
+            </div>
+        </div>
+        <!-- * carousel -->
 
         <!-- Order Recommend -->
         <div class="section full mt-4">
@@ -105,8 +121,8 @@
         </div>
         <!-- * Order Recommend -->
 
-        <!-- Send Money -->
-        <div class="section full mt-4">
+        <!-- สินค้าแนะนำ -->
+        <div class="section full my-5 pb-5">
             <div class="section-heading padding">
                 <h2 class="title">สินค้าแนะนำ</h2>
             </div>
@@ -191,7 +207,7 @@
             </div>
             <!-- * carousel small -->
         </div>
-        <!-- * Send Money -->
+        <!-- * สินค้าแนะนำ -->
 
     </div>
     <!-- * App Capsule -->
