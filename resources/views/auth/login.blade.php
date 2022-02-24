@@ -83,28 +83,25 @@
                         <p>เข้าสู่ระบบด้วย</p>
 
                         <div class="row">
-                            <div class="col text-center">
-                            </div>
 
-                            <div class="col-10 mx-5 text-center">
-                                <div class="row mx-2">
-                                    <div class="col">
-                                        <img src="{{ asset('img/logosocial/facebook.png') }}" style="width: 100px;" alt="">
-                                        <p>Facebook</p>
-                                    </div>
-                                    <div class="col">
-                                        <img src="{{ asset('img/logosocial/google.png') }}" style="width: 100px;" alt="">
-                                        <p>Google</p>
-                                    </div>
-                                    <div class="col">
-                                        <img src="{{ asset('img/logosocial/line.png') }}" style="width: 100px;" alt="">
-                                        <p>Line</p>
-                                    </div>
+                            <div class="col text-center">
+                                <div class="col py-1">
+                                    <a href="http://">
+                                        <img src="{{ asset('img/logosocial/facebook.png') }}" class="w-50" alt="">
+                                    </a>
+                                </div>
+                                <div class="col py-1">
+                                    <a href="http://">
+                                        <img src="{{ asset('img/logosocial/google.png') }}" class="w-50" alt="">
+                                    </a>
+                                </div>
+                                <div class="col py-1">
+                                    <a href="http://">
+                                        <img src="{{ asset('img/logosocial/line.png') }}" class="w-50" alt="">
+                                    </a>
                                 </div>
                             </div>
 
-                            <div class="col text-center">
-                            </div>
                         </div>
                     </div>
                 </div>

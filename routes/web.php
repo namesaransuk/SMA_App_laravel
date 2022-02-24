@@ -104,3 +104,7 @@ Auth::routes();
 Route::get('/profile', [App\Http\Controllers\HomeController::class, 'loginProfile'])->name('login.profile');
 Route::get('admin/home', [HomeController::class, 'adminHome'])->name('admin.home')->middleware('is_admin');
 Route::get('logout', [App\Http\Controllers\Auth\LoginController::class],'logout');
+
+//Route for all providers login
+Route::get('login/{provider}','Auth\LoginController@redirectToProvider');
+Route::get('login/{provider}/callback','Auth\LoginController@handleProviderCallback');
