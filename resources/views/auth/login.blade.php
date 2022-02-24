@@ -86,7 +86,7 @@
 
                             <div class="col text-center">
                                 <div class="col py-1">
-                                    <a href="http://">
+                                    <a href="{{ url('auth/facebook') }}">
                                         <img src="{{ asset('img/logosocial/facebook.png') }}" class="w-50" alt="">
                                     </a>
                                 </div>

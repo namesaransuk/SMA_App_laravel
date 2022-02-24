@@ -106,5 +106,5 @@ Route::get('admin/home', [HomeController::class, 'adminHome'])->name('admin.home
 Route::get('logout', [App\Http\Controllers\Auth\LoginController::class],'logout');
 
 //Route for all providers login
-Route::get('login/{provider}','Auth\LoginController@redirectToProvider');
-Route::get('login/{provider}/callback','Auth\LoginController@handleProviderCallback');
+Route::get('auth/facebook', [SocialController::class, 'facebookRedirect']);
+Route::get('auth/facebook/callback', [SocialController::class, 'loginWithFacebook']);
