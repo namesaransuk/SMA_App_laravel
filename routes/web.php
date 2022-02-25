@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\SocialController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,97 +15,97 @@ use App\Http\Controllers\HomeController;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+    Route::get('/', function () {
+        return view('index');
+    });
 
-Route::get('/index', function () {
-    return view('index');
-});
+    Route::get('/index', function () {
+        return view('index');
+    });
 
-Route::get('/wallet', function () {
-    return view('app-wallet');
-});
+    Route::get('/wallet', function () {
+        return view('app-wallet');
+    });
 
-Route::get('/list', function () {
-    return view('app-list');
-});
+    Route::get('/list', function () {
+        return view('app-list');
+    });
 
-Route::get('/notifications', function () {
-    return view('app-notifications');
-});
+    Route::get('/notifications', function () {
+        return view('app-notifications');
+    });
 
-Route::get('/profile', function () {
-    return view('app-profile');
-});
+    Route::get('/profile', function () {
+        return view('app-profile');
+    });
 
-Route::get('/settings', function () {
-    return view('app-settings');
-});
+    Route::get('/settings', function () {
+        return view('app-settings');
+    });
 
-Route::get('/login1', function () {
-    return view('app-login');
-});
+    Route::get('/login1', function () {
+        return view('app-login');
+    });
 
-Route::get('/register2', function () {
-    return view('app-register');
-});
+    Route::get('/register2', function () {
+        return view('app-register');
+    });
 
-Route::get('/forgot-password', function () {
-    return view('app-forgot-password');
-});
+    Route::get('/forgot-password', function () {
+        return view('app-forgot-password');
+    });
 
-Route::get('/404', function () {
-    return view('app-404');
-});
+    Route::get('/404', function () {
+        return view('app-404');
+    });
 
-Route::get('/about', function () {
-    return view('app-about');
-});
+    Route::get('/about', function () {
+        return view('app-about');
+    });
 
-Route::get('/contact', function () {
-    return view('app-contact');
-});
+    Route::get('/contact', function () {
+        return view('app-contact');
+    });
 
-Route::get('/faq', function () {
-    return view('app-faq');
-});
+    Route::get('/faq', function () {
+        return view('app-faq');
+    });
 
-Route::get('/change-username', function () {
-    return view('app-change-username');
-});
+    Route::get('/change-username', function () {
+        return view('app-change-username');
+    });
 
-Route::get('/change-email', function () {
-    return view('app-change-email');
-});
+    Route::get('/change-email', function () {
+        return view('app-change-email');
+    });
 
-Route::get('/change-password', function () {
-    return view('app-change-password');
-});
+    Route::get('/change-password', function () {
+        return view('app-change-password');
+    });
 
-Route::get('/transactions', function () {
-    return view('app-transactions');
-});
+    Route::get('/transactions', function () {
+        return view('app-transactions');
+    });
 
-Route::get('/qr-code', function () {
-    return view('app-qr-code');
-});
+    Route::get('/qr-code', function () {
+        return view('app-qr-code');
+    });
 
-Route::get('/dc-card', function () {
-    return view('app-dc-card');
-});
+    Route::get('/dc-card', function () {
+        return view('app-dc-card');
+    });
 
-Route::get('/bank-account', function () {
-    return view('app-bank-account');
-});
+    Route::get('/bank-account', function () {
+        return view('app-bank-account');
+    });
 
-Auth::routes();
+    Auth::routes();
 
-// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/profile', [App\Http\Controllers\HomeController::class, 'loginProfile'])->name('login.profile');
-Route::get('admin/home', [HomeController::class, 'adminHome'])->name('admin.home')->middleware('is_admin');
-Route::get('logout', [App\Http\Controllers\Auth\LoginController::class],'logout');
+    // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+    Route::get('/profile', [App\Http\Controllers\HomeController::class, 'loginProfile'])->name('login.profile');
+    Route::get('admin/home', [HomeController::class, 'adminHome'])->name('admin.home')->middleware('is_admin');
+    Route::get('logout', [App\Http\Controllers\Auth\LoginController::class], 'logout');
 
-//Route for all providers login
-Route::get('auth/facebook', [SocialController::class, 'facebookRedirect']);
-Route::get('auth/facebook/callback', [SocialController::class, 'loginWithFacebook']);
+    //Route for all providers login
+    Route::get('auth/facebook', [SocialController::class, 'facebookRedirect']);
+    Route::get('auth/facebook/callback', [SocialController::class, 'loginWithFacebook']);

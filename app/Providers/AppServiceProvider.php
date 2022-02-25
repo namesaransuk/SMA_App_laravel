@@ -2,7 +2,6 @@
 
 namespace App\Providers;
 
-use Illuminate\Routing\UrlGenerator;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -14,8 +13,12 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
-        // if (env('APP_ENV') === 'production') {
+        // //check that app is local
+        // if ($this->app->isLocal()) {
+        //     //if local register your services you require for development
+        //     $this->app->register('Barryvdh\Debugbar\ServiceProvider');
+        // } else {
+        //     //else register your services you require for production
         //     $this->app['request']->server->set('HTTPS', true);
         // }
     }
@@ -25,10 +28,11 @@ class AppServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function boot( UrlGenerator $url ){
-        // if ( env('APP_ENV') == 'production' ){
-        //     $url->forceSchema('https'); //5.3
-        //     $url->forceScheme('https'); //5.4
+    public function boot()
+    {
+        // if ($this->app->environment('production')) {
+        //     \URL::forceScheme('http');
         // }
+
     }
 }
