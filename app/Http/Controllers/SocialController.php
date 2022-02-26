@@ -31,7 +31,7 @@ class SocialController extends Controller
                 ]);
     
                 Auth::login($createUser);
-                return redirect('/dashboard');
+                return redirect('/index');
             }
     
         } catch (Exception $exception) {

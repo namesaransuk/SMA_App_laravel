@@ -10,7 +10,7 @@
                 </div>
                 <div class="modal-body">
                     <div class="action-sheet-content text-center">
-                        <div class="mb-1"><img src="<?php echo asset('img/icon/192x192.png'); ?>" alt="image" class="imaged w64 mb-2">
+                        <div class="mb-1"><img src="{{ asset('img/icon/192x192.png'); }}" alt="image" class="imaged w64 mb-2">
                         </div>
                         <div>
                             Install <strong>SMA Coin Wallet</strong> on your iPhone's home screen.
@@ -44,7 +44,7 @@
                 <div class="modal-body">
                     <div class="action-sheet-content text-center">
                         <div class="mb-1">
-                            <img src="<?php echo asset('img/icon/192x192.png'); ?>" alt="image" class="imaged w64 mb-2">
+                            <img src="{{ asset('img/icon/192x192.png'); }}" alt="image" class="imaged w64 mb-2">
                         </div>
                         <div>
                             Install <strong>SMA Coin Wallet</strong> on your Android's home screen.
